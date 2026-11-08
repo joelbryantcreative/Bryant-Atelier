@@ -1,0 +1,33 @@
+{
+  "name": "Bryant Atelier",
+  "url": "https://bryantatelier.com.au",
+  "tagline": "Stories with roots. Content that works.",
+  "email": "hello@bryantatelier.com.au",
+  "formEndpoint": "https://formsubmit.co/joel@lineagefilms.com.au",
+  "formSubject": "New enquiry from bryantatelier.com.au",
+  "phone": "+61 497 962 046",
+  "phoneHref": "+61497962046",
+  "instagram": "https://www.instagram.com/bryantatelier",
+  "instagramHandle": "@bryantatelier",
+  "location": "Byron Bay, Australia",
+  "bookingUrl": "/contact/",
+  "heroVimeo": "1195077840",
+  "areas": [
+    "Byron Bay",
+    "Mullumbimby",
+    "Bangalow",
+    "Lennox Head",
+    "Suffolk Park",
+    "Brunswick Heads",
+    "Ballina & Lismore",
+    "Northern Rivers NSW",
+    "Gold Coast",
+    "Australia & worldwide"
+  ],
+  "nav": [
+    { "label": "Work", "href": "/work/" },
+    { "label": "Services", "href": "/#services" },
+    { "label": "Originals", "href": "/originals/" },
+    { "label": "About", "href": "/#about" }
+  ]
+}

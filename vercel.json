@@ -1,0 +1,664 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bryantatelier.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/flowing-wood.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/flowing-wood/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/convivio-kalio.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/convivio-kalio/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/craved-this.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/craved-this/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/koud-the-breath-haus.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/koud-the-breath-haus/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/bytropic-nutrition.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/bytropic-nutrition/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/rogue-watches.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/rogue-watches/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/good-old-days.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/good-old-days/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/we-forest-earth.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/grun-resort.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/public/images/og-image.jpg",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/og/og-default.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/robots.txt",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/flowing-wood.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/flowing-wood/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/convivio-kalio.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/convivio-kalio/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/craved-this.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/craved-this/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/koud-the-breath-haus.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/koud-the-breath-haus/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/bytropic-nutrition.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/bytropic-nutrition/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/rogue-watches.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/rogue-watches/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/good-old-days.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/good-old-days/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/we-forest-earth.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/grun-resort.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/public/images/og-image.jpg",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/og/og-default.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/robots.txt",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lineagefilms.com.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/privacy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/opengraph-image.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/og/og-default.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/icon.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/icon-512.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/apple-icon.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/apple-touch-icon.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/favicon.ico",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/favicon-32.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/robots.txt",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/privacy/",
+      "statusCode": 301
+    },
+    {
+      "source": "/opengraph-image.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/og/og-default.jpg",
+      "statusCode": 301
+    },
+    {
+      "source": "/icon.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/icon-512.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/apple-icon.png",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/apple-touch-icon.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/favicon.ico",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/assets/icons/favicon-32.png",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/robots.txt",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.convertstudios.au"
+        }
+      ],
+      "destination": "https://bryantatelier.com.au/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/we-forest-earth.html",
+      "destination": "/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/grun-resort.html",
+      "destination": "/work/",
+      "statusCode": 301
+    },
+    {
+      "source": "/work/:slug.html",
+      "destination": "/work/:slug/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/public/images/og-image.jpg",
+      "destination": "/assets/og/og-default.jpg",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/assets/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

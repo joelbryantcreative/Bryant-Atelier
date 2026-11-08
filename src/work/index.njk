@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: Work
+description: "Brand films, documentary and short-form content and ads by Bryant Atelier, a Byron Bay video production studio working across the Northern Rivers and Gold Coast."
+preconnectVimeo: true
+---
+<header class="page-head on-dark">
+  <div class="container">
+    <span class="eyebrow">Work</span>
+    <h1>Visual stories that deliver results.</h1>
+    <p class="lede muted">Brand work and documentary, often blended. Short-form videos crafted to capture attention, build trust, and convert viewers into customers.</p>
+    <div class="subhead" style="margin-bottom: 0">
+      <div class="filters" role="group" aria-label="Filter work" data-filters>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        {%- for c in categories %}
+        <button type="button" data-filter="{{ c.key }}" aria-pressed="false">{{ c.label }}</button>
+        {%- endfor %}
+        <button type="button" data-filter="originals" aria-pressed="false">Originals</button>
+      </div>
+      <p class="muted" style="font-size: var(--fs-small)" aria-live="polite" data-filter-count></p>
+    </div>
+  </div>
+</header>
+
+<section class="on-dark" aria-labelledby="films-h" data-filter-group>
+  <h2 id="films-h" class="visually-hidden">Films</h2>
+  <div class="work-grid work-grid--3">
+    {%- for p in projects | visible %}
+    {% include "partials/work-tile.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="on-dark section" aria-labelledby="reels-h" data-filter-group>
+  <div class="container">
+    <div class="subhead" style="margin-top: 0">
+      <div>
+        <span class="eyebrow">Content &amp; Ads</span>
+        <h2 id="reels-h" style="font-size: clamp(1.75rem, 3.4vw, 2.75rem); margin-top: 1rem; max-width: 22ch">Short-form ads and social content. {% draft %}</h2>
+      </div>
+      <p class="muted" style="max-width: 26em">Tap to play. Sound on. {% draft %}</p>
+    </div>
+  </div>
+  <div class="reels">
+    {%- for r in reels %}{% include "partials/reel-card.njk" %}{% endfor %}
+  </div>
+</section>
+
+<section class="section on-oxblood">
+  <div class="container cta-band">
+    <h2>Let's Connect!</h2>
+    <a class="btn btn--bone" href="{{ site.bookingUrl }}">Book a call <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+<div class="quotes" role="list" tabindex="0" aria-label="Testimonials, scroll sideways for more">
+  {%- for t in testimonials %}
+  <figure class="quote" role="listitem">
+    <blockquote>&ldquo;{{ t.quote | flags | safe }}&rdquo;</blockquote>
+    <figcaption>
+      {% picture "people/" + t.photo, "", "48px", [96] %}
+      <span><span class="quote__name">{{ t.name }}</span><span class="quote__role">{{ t.role }}</span></span>
+    </figcaption>
+  </figure>
+  {%- endfor %}
+</div>

@@ -1,0 +1,40 @@
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" aria-label="Bryant Atelier, home">{% set wmClass = "" %}{% include "partials/wordmark.njk" %}</a>
+        <p>Brand films, documentary, content and ads. Byron Bay to the Gold Coast.</p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul role="list">
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/originals/">Originals</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul role="list">
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></li>
+          <li><a class="social" href="{{ site.instagram }}" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            {{ site.instagramHandle }}<span class="visually-hidden"> on Instagram (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Based in</h2>
+        <ul role="list">
+          <li>{{ site.location }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; {{ year }} Bryant Atelier. All rights reserved.</span>
+      <a href="/privacy/">Privacy Policy</a>
+    </div>
+  </div>
+</footer>

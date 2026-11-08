@@ -1,0 +1,109 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: visibleProjects
+  size: 1
+  alias: p
+permalink: "/work/{{ p.slug }}/"
+headerSolid: true
+ogType: video.other
+eleventyComputed:
+  title: "{{ p.title }}, {{ p.type }}"
+  ogTitle: "{{ p.title }} | Bryant Atelier"
+  description: "{{ p.description }}"
+  ogImage: "/assets/og/{{ p.slug }}.jpg"
+  jsonldExtra:
+    "@type": "CreativeWork"
+    "name": "{{ p.title }}"
+    "genre": "{{ p.type }}"
+    "url": "{{ site.url }}/work/{{ p.slug }}/"
+    "description": "{{ p.description }}"
+    "creator": { "@id": "{{ site.url }}/#business" }
+---
+<div class="on-dark">
+  <div class="container">
+    <div class="project-bar">
+      <span>Client: <strong>{{ p.client }}</strong></span>
+      <span>Project: <strong>{{ p.title }}</strong></span>
+      {%- if p.year %}<span>Year: <strong>{{ p.year | flags | safe }}</strong></span>{% endif %}
+      {%- if p.original %}<span><strong>Lineage Films Original</strong></span>{% endif %}
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: var(--space-md)">
+    <div class="film" data-film="{{ p.vimeo }}" data-title="{{ p.title }}">
+      <button class="film__btn" type="button" aria-label="Play {{ p.title }}">
+        {% picture "work/" + p.still, "", "(min-width: 78rem) 1200px, 100vw", [800, 1200, 1920], { eager: true } %}
+        <span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+        <span class="film__label" aria-hidden="true">Play film</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-title">
+      {%- if p.badge %}<span class="badge badge--inline" style="justify-self: start">{{ p.badge }}</span>{% endif %}
+      <h1>{{ p.title }}</h1>
+      <p class="muted">{{ p.type }}</p>
+    </div>
+    <div class="project-body">
+      <div><h2>About</h2><p>{{ p.about | flags | safe }}</p></div>
+      <div><h2>Approach</h2><p>{{ p.approach | flags | safe }}</p></div>
+    </div>
+  </div>
+
+  {%- if p.frames %}
+  <section class="container" aria-labelledby="frames-h" style="padding-bottom: var(--space-xl)">
+    <h2 id="frames-h" class="eyebrow" style="margin-bottom: var(--space-sm)">Frames</h2>
+    <div class="frames">
+      {%- for n in p.frames | range1 %}
+      {%- set full %}{% imageUrl "frames/" + p.slug + "/" + n + ".jpg", 1920, "webp" %}{% endset %}
+      <button type="button" data-frame="{{ full }}" aria-label="Open frame {{ loop.index }} of {{ p.frames }}">
+        {% picture "frames/" + p.slug + "/" + n + ".jpg", "Still from " + p.title + ", frame " + loop.index, "(min-width: 48rem) 33vw, 50vw", [400, 800] %}
+      </button>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- else %}
+  <div class="container" style="padding-bottom: var(--space-lg)"><p class="muted"><span class="flag">[ADD FRAMES: 9 stills, 16:9]</span></p></div>
+  {%- endif %}
+
+  <div class="container">
+    <div class="project-impact" style="border-top: 1px solid var(--rule-on-dark)">
+      <div><h2>Impact</h2><p>{{ p.impact | flags | safe }}</p></div>
+      {%- if p.laurels %}
+      <ul class="laurels" role="list" style="justify-content: flex-start">
+        {%- for f in festivals %}
+        <li><img src="/assets/laurels/{{ f.laurel }}" alt="{{ f.festival }}, {{ f.result }} {{ f.year }}" loading="lazy" decoding="async"></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+
+    {%- set nxt = projects | nextProject(p.slug) %}
+    <nav class="project-next" aria-label="Next project">
+      <span class="eyebrow">Next</span>
+      <a class="project-next__link" href="/work/{{ nxt.slug }}/"><span class="serif">{{ nxt.title }}</span><span class="muted">{{ nxt.type }}</span></a>
+      <p><a class="text-link" href="/work/"><span aria-hidden="true">&larr;</span> Back to all work</a></p>
+    </nav>
+  </div>
+</div>
+
+<section class="section on-oxblood">
+  <div class="container cta-band">
+    <span class="eyebrow">Contact</span>
+    <h2>every great project starts here.</h2>
+    <a class="btn btn--bone" href="{{ site.bookingUrl }}">Book a call <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="{{ p.title }} frames" data-lightbox>
+  <div class="lightbox__bar"><span data-lb-count></span>
+    <button class="icon-btn" type="button" aria-label="Close" data-lb-close><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="lightbox__stage"><img src="" alt=""></div>
+  <div class="lightbox__nav">
+    <button class="icon-btn" type="button" aria-label="Previous frame" data-lb-prev><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 2L4 8l6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <button class="icon-btn" type="button" aria-label="Next frame" data-lb-next><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+  </div>
+</div>

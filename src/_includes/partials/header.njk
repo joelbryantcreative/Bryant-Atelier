@@ -1,0 +1,35 @@
+<header class="site-header{% if headerSolid %} is-solid{% endif %}" data-header>
+  <div class="container site-header__inner">
+    <a href="/" aria-label="Bryant Atelier, home">{% set wmClass = "" %}{% include "partials/wordmark.njk" %}</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul role="list">
+        {%- for item in site.nav %}
+        <li><a href="{{ item.href }}"{% if page.url == item.href or (item.href != '/' and item.href.indexOf('#') == -1 and page.url.indexOf(item.href) == 0) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+        <li><a class="btn btn--primary" href="{{ site.bookingUrl }}">Book a call</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+  <nav aria-label="Mobile">
+    <ul role="list">
+      <li><a href="/">Home</a></li>
+      {%- for item in site.nav %}
+      <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+      {%- endfor %}
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav__foot">
+    <a class="btn btn--primary" href="{{ site.bookingUrl }}">Book a call</a>
+    <div class="mobile-nav__contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<form class="form" action="{{ site.formEndpoint }}" method="POST" data-contact-form>
+  <input type="hidden" name="_subject" value="{{ site.formSubject }}">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="{{ site.url }}/contact/?sent=1">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <div class="form__row form__row--2">
+    <div class="field"><label for="f-first">First Name</label><input id="f-first" name="firstname" type="text" required autocomplete="given-name"></div>
+    <div class="field"><label for="f-last">Last Name</label><input id="f-last" name="lastname" type="text" required autocomplete="family-name"></div>
+  </div>
+  <div class="form__row form__row--2">
+    <div class="field"><label for="f-email">Email Address</label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email"></div>
+    <div class="field"><label for="f-phone">Phone <span class="optional">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+  </div>
+  <fieldset class="field chips">
+    <legend>What are you after? <span class="optional">(optional)</span> {% draft %}</legend>
+    {%- for opt in ["Brand film or documentary", "Monthly content", "Ads & growth", "Not sure yet"] %}
+    <label class="chip"><input type="checkbox" name="interest" value="{{ opt }}"><span>{{ opt }}</span></label>
+    {%- endfor %}
+  </fieldset>
+  <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="6" required></textarea></div>
+  <div class="form__actions">
+    <button class="btn btn--bone" type="submit">Submit <span class="btn__arrow" aria-hidden="true">&rarr;</span></button>
+    <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+  </div>
+</form>
+<div class="form-success" hidden tabindex="-1" data-form-success>
+  <h3>Thanks, that's landed.</h3>
+  <p>We'll be in touch soon. In the meantime, feel free to follow along on <a href="{{ site.instagram }}" rel="noopener" target="_blank">Instagram</a>. ;)</p>
+</div>

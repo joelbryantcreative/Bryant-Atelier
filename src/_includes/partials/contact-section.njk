@@ -1,0 +1,16 @@
+<div class="contact">
+  <div class="contact__details">
+    <div class="book-card">
+      <h3>Book a call</h3>
+      <p>Prefer to talk it through? Call or email, or send the form and we'll set up a time. {% draft %}</p>
+      <div><a class="btn btn--bone" href="tel:{{ site.phoneHref }}">Call {{ site.phone }}</a></div>
+    </div>
+    <dl>
+      <div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></dd></div>
+      <div><dt>Instagram</dt><dd><a href="{{ site.instagram }}" rel="noopener" target="_blank">{{ site.instagramHandle }}</a></dd></div>
+      <div><dt>Areas served</dt><dd><ul class="areas" role="list">{% for a in site.areas %}<li>{{ a }}</li>{% endfor %}</ul></dd></div>
+    </dl>
+  </div>
+  <div>{% include "partials/contact-form.njk" %}</div>
+</div>

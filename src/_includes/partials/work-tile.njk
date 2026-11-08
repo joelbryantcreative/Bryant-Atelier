@@ -1,0 +1,14 @@
+{#- expects: p (project) -#}
+<a class="work-card" href="/work/{{ p.slug }}/" {% if p.preview %}data-preview="{{ p.preview }}"{% endif %} data-cats="{{ p.categories | join(' ') }}{% if p.original %} originals{% endif %}">
+  <span class="work-card__still">{% picture "work/" + p.still, "", "(min-width: 64rem) 34vw, (min-width: 40rem) 50vw, 100vw", [480, 800, 1200] %}</span>
+  <span class="work-card__scrim" aria-hidden="true"></span>
+  {%- if p.mark %}<span class="work-card__mark" aria-hidden="true"><img src="/assets/logos/{{ p.mark }}" alt="" loading="lazy" decoding="async"></span>{% endif %}
+  {%- if p.badge %}<span class="badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>{{ p.badge }}</span>{% endif %}
+  <span class="work-card__meta">
+    <span>
+      <span class="work-card__title">{{ p.title }}</span><br>
+      <span class="work-card__client">{{ p.client }}</span>
+    </span>
+    <span class="work-card__type">{{ p.categories[0] | categoryLabel }}{% if p.original %}<br>Original{% endif %}</span>
+  </span>
+</a>

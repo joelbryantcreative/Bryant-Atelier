@@ -1,0 +1,8 @@
+{#- expects: r (reel) -#}
+<div class="reel" data-reel="{{ r.vimeo }}" data-cats="content-ads">
+  <button class="reel__btn" type="button" aria-label="Play short-form ad {{ r.n }}, {{ r.duration }}">
+    {% picture "reels/" + r.poster, "", "(min-width: 64rem) 18vw, (min-width: 40rem) 40vw, 68vw", [320, 640] %}
+    <span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z"/></svg></span>
+  </button>
+  <span class="reel__meta" aria-hidden="true"><span>Short-form ad</span><span>{{ r.duration }}</span></span>
+</div>

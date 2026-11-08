@@ -1,0 +1,38 @@
+{%- set biz = {
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": site.url + "/#business",
+  "name": site.name,
+  "description": "Bryant Atelier is a Byron Bay film and content studio making brand films, documentary, short-form content and ads for businesses from Byron Bay to the Gold Coast.",
+  "url": site.url + "/",
+  "image": site.url + "/assets/og/og-default.jpg",
+  "logo": site.url + "/assets/icons/icon-512.png",
+  "email": site.email,
+  "telephone": site.phone,
+  "currenciesAccepted": "AUD",
+  "founder": { "@type": "Person", "name": "Joel Bryant", "jobTitle": "Founder & Director", "url": "https://joelbryant.com.au", "sameAs": ["https://www.instagram.com/joelbryant_"] },
+  "address": { "@type": "PostalAddress", "addressLocality": "Byron Bay", "addressRegion": "NSW", "postalCode": "2481", "addressCountry": "AU" },
+  "geo": { "@type": "GeoCoordinates", "latitude": -28.6474, "longitude": 153.6020 },
+  "areaServed": [
+    { "@type": "City", "name": "Byron Bay" }, { "@type": "City", "name": "Mullumbimby" },
+    { "@type": "City", "name": "Bangalow" }, { "@type": "City", "name": "Lennox Head" },
+    { "@type": "City", "name": "Suffolk Park" }, { "@type": "City", "name": "Brunswick Heads" },
+    { "@type": "City", "name": "Ballina" }, { "@type": "City", "name": "Lismore" },
+    { "@type": "AdministrativeArea", "name": "Northern Rivers" },
+    { "@type": "City", "name": "Gold Coast" },
+    { "@type": "Country", "name": "Australia" }
+  ],
+  "knowsAbout": ["Brand films", "Documentary filmmaking", "Founder portraits", "Place and destination films", "Event documentary", "Short-form video content", "Social media video", "Video advertising", "Paid social distribution", "Video production Byron Bay", "Video production Gold Coast"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Film and content services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Films & Documentary", "description": "Hero brand films, founder portraits, documentary, and place and destination films." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monthly Content", "description": "One shoot day a month, made into a set of short-form pieces for social." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ads & Growth", "description": "Strategy, ad creative, paid distribution and optimisation." } }
+    ]
+  },
+  "sameAs": [site.instagram]
+} %}
+{%- set graph = [biz, { "@type": "WebSite", "@id": site.url + "/#website", "url": site.url + "/", "name": site.name, "publisher": { "@id": site.url + "/#business" }, "inLanguage": "en-AU" }] %}
+{%- if jsonldExtra %}{% set graph = graph.concat([jsonldExtra]) %}{% endif %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": graph } | json | safe }}</script>

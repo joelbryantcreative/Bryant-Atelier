@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {%- set pageTitle = (title + " | " + site.name) if title else (site.name + " | Brand films, documentary, content and ads, Byron Bay") %}
+  {%- set canonical = page.url | absUrl(site.url) %}
+  {%- set ogImg = (ogImage or "/assets/og/og-default.jpg") | absUrl(site.url) %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ canonical }}">
+  {%- if noindex %}<meta name="robots" content="noindex">{% endif %}
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="geo.region" content="AU-NSW">
+  <meta name="geo.placename" content="Byron Bay">
+
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:title" content="{{ ogTitle or pageTitle }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle or pageTitle }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ ogImg }}">
+
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+  <link rel="preload" href="/assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/fraunces-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
+  {%- if preconnectVimeo %}
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+  {%- endif %}
+  <link rel="stylesheet" href="/css/styles.css?v={{ build }}">
+
+  {% include "partials/jsonld.njk" %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="/js/main.js?v={{ build }}" defer></script>
+</body>
+</html>
