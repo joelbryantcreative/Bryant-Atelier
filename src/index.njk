@@ -125,53 +125,111 @@ homeReels: [1, 3]
   </div>
 </section>
 
-{# 5. APPROACH --------------------------------------------------------- #}
-<section class="section on-mist" id="approach" aria-labelledby="approach-h">
+{# 5. HOW I WORK (Lineage's Develop / Direct / Distribute, with the free step first) #}
+<section class="section on-dark how" id="approach" aria-labelledby="approach-h">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">05 / Approach</span>
-      <h2 id="approach-h">my approach.</h2>
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">05 / How I work</span>
+        <h2 id="approach-h" style="margin-top: 1rem">my approach.</h2>
+      </div>
+      <p class="lede muted">One shoot. A hero film, a month of social content and the ads that carry it, all from the same footage. {% draft %}</p>
     </div>
-    <div class="cols cols--3">
-      <article class="col">
-        <span class="col__num">01</span>
+    <ol class="steps" role="list">
+      <li class="step">
+        <span class="step__num">01</span>
+        <h3>Start free</h3>
+        <p class="step__sub">Your review or story session</p>
+        <p class="step__body">I look at your content, or we talk through your story, and you get clear ideas back within 48 hours. {% draft %}</p>
+        <p class="step__get"><span>You get</span>Clear ideas, even if we don't work together {% draft %}</p>
+      </li>
+      <li class="step">
+        <span class="step__num">02</span>
         <h3>Develop</h3>
-        <p class="col__body">Story development, treatment, casting, scheduling and campaign strategy. The decisions made before a camera rolls shape everything that follows.</p>
-      </article>
-      <article class="col">
-        <span class="col__num">02</span>
+        <p class="step__sub">Plan the story</p>
+        <p class="step__body">Story development, treatment, casting, scheduling and campaign strategy. The decisions made before a camera rolls shape everything that follows.</p>
+        <p class="step__get"><span>You get</span>A treatment, a shot list and a plan {% draft %}</p>
+      </li>
+      <li class="step">
+        <span class="step__num">03</span>
         <h3>Direct</h3>
-        <p class="col__body">Direction, cinematography, sound and lighting through to editing, colour and sound design. Embedded with the work, end to end.</p>
-      </article>
-      <article class="col">
-        <span class="col__num">03</span>
+        <p class="step__sub">Shoot and edit</p>
+        <p class="step__body">Direction, cinematography, sound and lighting through to editing, colour and sound design. Embedded with the work, end to end.</p>
+        <p class="step__get"><span>You get</span>A hero film and a library of footage {% draft %}</p>
+      </li>
+      <li class="step step--light">
+        <span class="step__num">04</span>
         <h3>Distribute</h3>
-        <p class="col__body">Cut-downs, formats, content optimisation, community engagement and ongoing repurposing: the long tail that compounds.</p>
-      </article>
+        <p class="step__sub">Cut, post and promote</p>
+        <p class="step__body">Cut-downs, formats, content optimisation, community engagement and ongoing repurposing: the long tail that compounds.</p>
+        <p class="step__get"><span>You get</span>Social content and ads that keep working {% draft %}</p>
+      </li>
+    </ol>
+    <div class="cta-strip">
+      <p><strong>Step one is free.</strong> Find out what your content could be doing. {% draft %}</p>
+      <div class="cta-strip__actions">
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Start with a free review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="text-link" href="/contact/">Get in touch</a>
+      </div>
     </div>
-    <p class="approach__coda">One shoot. A hero film, a month of social content and the ads that carry it, all from the same footage. {% draft %}</p>
   </div>
 </section>
 
-{# 6. PROOF ------------------------------------------------------------ #}
-<section class="section on-dark proof" id="recognition" aria-labelledby="proof-h">
+{# 6. CLIENT WINS / RECOGNITION. Every figure comes from the project write-ups. #}
+<section class="section on-light" id="recognition" aria-labelledby="wins-h">
   <div class="container">
-    <div class="proof__award">
-      <span class="eyebrow">06 / Recognition</span>
-      <span class="badge badge--inline"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>Byron Bay Film Festival winner</span>
-      <h2 id="proof-h"><span class="serif">Flowing Wood</span>, Best Byron Bay Film, Byron Bay International Film Festival 2025.</h2>
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">06 / Client wins</span>
+        <h2 id="wins-h" style="margin-top: 1rem">some recent wins.</h2>
+      </div>
+      <p class="lede muted">Films that travel, campaigns that keep giving, and stories told the way they happened. {% draft %}</p>
     </div>
-    <ul class="laurels" role="list">
-      {%- for f in festivals %}
-      <li><img src="/assets/laurels/{{ f.laurel }}" alt="{{ f.festival }}, {{ f.result }}" loading="lazy" decoding="async"></li>
-      {%- endfor %}
-    </ul>
-    <ul class="proof__list" role="list">
-      {%- for f in festivals %}
-      <li><strong>{{ f.festival }}</strong>{% if f.place %} ({{ f.place }}){% endif %}: {{ f.result }}, {{ f.year | flags | safe }}</li>
-      {%- endfor %}
-    </ul>
-    <p style="margin-top: var(--space-lg)"><a class="btn btn--ghost" href="/work/flowing-wood/">Watch Flowing Wood <span class="btn__arrow" aria-hidden="true">&rarr;</span></a></p>
+    <div class="wins">
+      <a class="win win--feature" href="/work/flowing-wood/">
+        <span class="win__label"><span class="badge badge--inline">Byron Bay Film Festival winner</span><span class="win__chip">Lineage Films Original</span></span>
+        <span class="win__big">Best Byron Bay Film</span>
+        <span class="win__what"><span class="serif">Flowing Wood</span>, Byron Bay International Film Festival 2025</span>
+        <span class="win__panel">
+          <span class="win__stats">
+            <span><strong>4</strong> film festivals</span>
+            <span><strong>3</strong> countries</span>
+            <span><strong>1</strong> award</span>
+          </span>
+          <span class="win__laurels">{% for f in festivals %}<img src="/assets/laurels/{{ f.laurel }}" alt="{{ f.festival }}, {{ f.result }} {{ f.year }}" loading="lazy" decoding="async">{% endfor %}</span>
+        </span>
+        <span class="win__how"><strong>How:</strong> shot solo over two weeks on a remote stretch of coast. No crew, no budget.</span>
+      </a>
+      <a class="win" href="/work/bytropic-nutrition/">
+        <span class="win__label">Brand film &amp; social</span>
+        <span class="win__big">2 days</span>
+        <span class="win__what">of filming became a whole campaign</span>
+        <span class="win__how">A hero film, cut-downs for social and stills for the website. <strong>Bytropic Nutrition</strong></span>
+      </a>
+      <a class="win" href="/work/koud-the-breath-haus/">
+        <span class="win__label">Event documentary</span>
+        <span class="win__big">3 days</span>
+        <span class="win__what">filmed solo, start to finish</span>
+        <span class="win__how">Thirty strangers, one retreat, one film for Koud's brand launch. <strong>Koud &times; The Breath Haus</strong></span>
+      </a>
+      <a class="win" href="/work/craved-this/">
+        <span class="win__label">Launch campaign</span>
+        <span class="win__big">1 of 3</span>
+        <span class="win__what">films in a brand launch</span>
+        <span class="win__how">Plus website visuals the brand keeps using. <strong>Craved This</strong></span>
+      </a>
+      <a class="win" href="/work/convivio-kalio/">
+        <span class="win__label">Brand launch documentary</span>
+        <span class="win__big">Day one</span>
+        <span class="win__what">a family's story, ready as they opened</span>
+        <span class="win__how">Released for Convivio's launch, shot at a Kalio residence. <strong>Convivio &times; Kalio</strong></span>
+      </a>
+      <div class="win win--cta">
+        <h3>Want a win like these? {% draft %}</h3>
+        <p class="muted">Your free review shows where your content can do more. {% draft %}</p>
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -186,20 +244,36 @@ homeReels: [1, 3]
   </div>
 </section>
 
-{# 8. ABOUT ------------------------------------------------------------ #}
+{# 8. ABOUT + WHY WORK WITH ME ------------------------------------------ #}
 <section class="section on-mist" id="about" aria-labelledby="about-h">
   <div class="container about">
-    <div class="photo-placeholder" role="img" aria-label="Photo of Joel Bryant to come">
-      <span><span class="flag">[ADD PHOTO OF JOEL]</span><br><br>Portrait, 4:5, at least 1600px tall</span>
+    <div class="photo-placeholder photo-placeholder--arch" role="img" aria-label="Photo of Joel Bryant to come">
+      <span><span class="flag">[ADD PHOTO OF JOEL]</span><br><br>Portrait, 4:5, at least 1600px tall.<br>Two or three extra photos (on set, in the field) make a collage like Jake's.</span>
     </div>
     <div class="about__text">
-      <span class="eyebrow">08 / About</span>
+      <span class="eyebrow">08 / Meet the filmmaker</span>
       <h2 id="about-h">Joel Bryant.</h2>
       <p>I'm Joel Bryant, a filmmaker and founder based in Byron Bay. {% draft %}</p>
       <p>Bryant Atelier brings my two studios under one roof: Lineage Films for brand films and documentary, and Convert Studios for content and ads. {% draft %}</p>
       <p>I direct, shoot and edit much of the work myself, from solo documentary shoots on remote coastline to campaign days with a small crew. And I run the ads. {% draft %}</p>
-      <p class="muted">I come from a filmmaking background, which means I treat every piece of work as a story worth watching. That's the standard. The business outcomes follow.</p>
+      <p class="about__pull">I come from a filmmaking background, which means I treat every piece of work as a story worth watching. That's the standard. The business outcomes follow.</p>
+      <p class="muted"><span class="flag">[ADD: why you started, and something about you outside work]</span></p>
+      <div class="about__actions">
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free review from me <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="text-link" href="/contact/">Get in touch</a>
+      </div>
     </div>
+  </div>
+  <div class="container" style="margin-top: var(--space-xl)">
+    <h3 class="why__title">Why work with me {% draft %}</h3>
+    <ul class="why" role="list">
+      <li><strong>You work with me</strong><span>The person who films it is the person who edits it. No hand-offs.</span></li>
+      <li><strong>Story first</strong><span>Every project starts with the story, not the camera.</span></li>
+      <li><strong>Award-winning</strong><span>Best Byron Bay Film, Byron Bay International Film Festival 2025.</span></li>
+      <li><strong>One shoot, every format</strong><span>A hero film, social cuts and stills from the same days.</span></li>
+      <li><strong>Content and ads together</strong><span>I make the content and run the ads, so nothing gets lost between them.</span></li>
+      <li><strong>Local</strong><span>Based in Byron Bay, working from the Northern Rivers to the Gold Coast.</span></li>
+    </ul>
   </div>
 </section>
 

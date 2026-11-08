@@ -41,6 +41,14 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 - [ ] **Hero proof line:** "Best Byron Bay Film, Byron Bay International Film Festival 2025" now sits under the hero buttons.
 - [ ] **Form submissions:** free review requests go to the same Formsubmit inbox, with the subject "Free review request from bryantatelier.com.au".
 
+## Homepage sections modelled on Biggs Growth
+
+- [ ] **How I work** (`/#approach`): four steps (Start free, Develop, Direct, Distribute), each with a "You get" line. Develop/Direct/Distribute keep Lineage's wording; the step names under them, the "You get" lines and step 01 are DRAFT. Also the "Step one is free." strip.
+- [ ] **Client wins** (`/#recognition`, replaces the old Recognition section). All figures come from the project write-ups: Flowing Wood (4 festivals, 3 countries, 1 award, shot solo over two weeks), Bytropic (2 days of filming became a hero film, social cut-downs and website stills), Koud (3 days filmed solo, thirty strangers), Craved This (1 of 3 launch films, plus website visuals), Convivio (released for the launch). Check you're happy with each summary. **If you have real numbers you can share** (views, enquiries, sales, bookings, with the client's OK), they'd make these cards much stronger.
+- [ ] **Testimonial headlines** are word-for-word fragments of each quote; the tags are my labels for the work involved.
+- [ ] **Meet the filmmaker** (`/#about`): **[ADD]** your portrait, ideally 2 or 3 extra photos (on set, in the field) for a collage like Jake's, plus a few lines on why you started and something about you outside work.
+- [ ] **Why work with me:** six reasons, all DRAFT. Only keep the ones you agree with.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?

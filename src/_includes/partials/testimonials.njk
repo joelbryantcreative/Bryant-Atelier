@@ -1,6 +1,11 @@
+{#- Headlines are word-for-word fragments of each quote. -#}
 <div class="quotes" role="list" tabindex="0" aria-label="Testimonials, scroll sideways for more">
   {%- for t in testimonials %}
-  <figure class="quote" role="listitem">
+  <figure class="quote{% if t.featured %} quote--featured{% endif %}" role="listitem">
+    <div class="quote__head">
+      <p class="quote__headline">&ldquo;{{ t.headline }}&rdquo;</p>
+      <ul class="quote__tags" role="list">{% for tag in t.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    </div>
     <blockquote>&ldquo;{{ t.quote | flags | safe }}&rdquo;</blockquote>
     <figcaption>
       {% picture "people/" + t.photo, "", "48px", [96] %}

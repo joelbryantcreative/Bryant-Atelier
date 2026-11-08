@@ -1,26 +1,77 @@
 [
   {
     "quote": "[Bryant Atelier] shot the paid ad campaigns for my Buyers Agent Institute and the results spoke for themselves. More qualified leads at a lower cost, with creative that actually converted. They understand both the storytelling and the numbers behind it all.",
-    "name": "Ben Handler", "role": "Founder, Buyers Agent Institute", "photo": "ben-handler.jpg", "kind": "results"
+    "name": "Ben Handler",
+    "role": "Founder, Buyers Agent Institute",
+    "photo": "ben-handler.jpg",
+    "kind": "results",
+    "headline": "More qualified leads at a lower cost",
+    "tags": [
+      "Paid ads",
+      "Ad creative"
+    ],
+    "featured": true
   },
   {
     "quote": "Our retreat was the most personal thing we'd ever put on. Joel was the only person we trusted to capture it without intruding. What he made still moves people.",
-    "name": "Zac Povolny", "role": "Co-Founder, Koud", "photo": "zac.jpg", "kind": "story", "project": "koud-the-breath-haus"
+    "name": "Zac Povolny",
+    "role": "Co-Founder, Koud",
+    "photo": "zac.jpg",
+    "kind": "story",
+    "project": "koud-the-breath-haus",
+    "headline": "What he made still moves people",
+    "tags": [
+      "Event documentary"
+    ]
   },
   {
     "quote": "We secured you guys for a summer campaign video for our supplement company, Bytropic Nutrition. From the very first meeting you understood the creative direction, and the attention to detail was second to none. The outcome exceeded all expectations. You guys are some of the most talented and strategic thinkers in the Northern Rivers.",
-    "name": "Nathan Tanner", "role": "Founder, Bytropic Nutrition", "photo": "nathan-tanner.jpg", "kind": "results", "project": "bytropic-nutrition"
+    "name": "Nathan Tanner",
+    "role": "Founder, Bytropic Nutrition",
+    "photo": "nathan-tanner.jpg",
+    "kind": "results",
+    "project": "bytropic-nutrition",
+    "headline": "The outcome exceeded all expectations",
+    "tags": [
+      "Brand film",
+      "Campaign"
+    ]
   },
   {
     "quote": "I love the slower pace and the cinematics. It really suits the isolation of the outback. I had no idea you'd cut it this way. It's insane.",
-    "name": "Dean Gregory", "role": "Subject of Flowing Wood", "photo": "dean.jpg", "kind": "story", "project": "flowing-wood"
+    "name": "Dean Gregory",
+    "role": "Subject of Flowing Wood",
+    "photo": "dean.jpg",
+    "kind": "story",
+    "project": "flowing-wood",
+    "headline": "I had no idea you'd cut it this way",
+    "tags": [
+      "Documentary"
+    ]
   },
   {
     "quote": "Our concept is a new one and a little hard to convey, but the storytelling was immaculate and the visuals captured exactly what we needed to communicate. [Bryant Atelier] understood the brand instantly, and the sales backed it up.",
-    "name": "Craved This", "role": "E-commerce brand", "photo": "craved.webp", "kind": "results", "project": "craved-this"
+    "name": "Craved This",
+    "role": "E-commerce brand",
+    "photo": "craved.webp",
+    "kind": "results",
+    "project": "craved-this",
+    "headline": "The sales backed it up",
+    "tags": [
+      "Brand film",
+      "Launch campaign"
+    ]
   },
   {
     "quote": "Ciao Joel! The video is stunning, it's so beautiful. Grazie, grazie, grazie. Thank you so much!",
-    "name": "Daniela Maiorano", "role": "Co-Founder, Convivio", "photo": "daniela.jpg", "kind": "story", "project": "convivio-kalio"
+    "name": "Daniela Maiorano",
+    "role": "Co-Founder, Convivio",
+    "photo": "daniela.jpg",
+    "kind": "story",
+    "project": "convivio-kalio",
+    "headline": "The video is stunning",
+    "tags": [
+      "Brand launch documentary"
+    ]
   }
 ]
