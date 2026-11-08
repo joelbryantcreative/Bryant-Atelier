@@ -70,6 +70,8 @@ bryant-atelier/
 
 ## 4. Design system
 
+> **Update:** Joel chose black and white with no accent colour. The Oxblood and Dusk notes below are superseded; current tokens are at the top of `src/css/styles.css`.
+
 **Hex values.** The brief says to use Convert's exact hex if the extract has them. It does, so the defaults are:
 
 | Token | Brief | Convert extract (used) | Note |
