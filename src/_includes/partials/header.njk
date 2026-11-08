@@ -6,7 +6,7 @@
         {%- for item in site.nav %}
         <li><a href="{{ item.href }}"{% if page.url == item.href or (item.href != '/' and item.href.indexOf('#') == -1 and page.url.indexOf(item.href) == 0) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
-        <li><a class="btn btn--primary" href="{{ site.bookingUrl }}">Book a call</a></li>
+        <li><a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }}</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
@@ -26,7 +26,8 @@
     </ul>
   </nav>
   <div class="mobile-nav__foot">
-    <a class="btn btn--primary" href="{{ site.bookingUrl }}">Book a call</a>
+    <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free review</a>
+    <a class="btn btn--ghost" href="{{ site.bookingUrl }}">Book a call</a>
     <div class="mobile-nav__contact">
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>

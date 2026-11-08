@@ -25,9 +25,24 @@
     "Australia & worldwide"
   ],
   "nav": [
-    { "label": "Work", "href": "/work/" },
-    { "label": "Services", "href": "/#services" },
-    { "label": "Originals", "href": "/originals/" },
-    { "label": "About", "href": "/#about" }
-  ]
+    {
+      "label": "Work",
+      "href": "/work/"
+    },
+    {
+      "label": "Services",
+      "href": "/#services"
+    },
+    {
+      "label": "Originals",
+      "href": "/originals/"
+    },
+    {
+      "label": "About",
+      "href": "/#about"
+    }
+  ],
+  "ctaLabel": "Free review",
+  "ctaUrl": "/review/",
+  "reviewSubject": "Free review request from bryantatelier.com.au"
 }

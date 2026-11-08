@@ -1,0 +1,16 @@
+<div class="industries">
+  {%- for i in industries %}
+  {%- if i.project %}
+  <a class="industry" href="/work/{{ i.project }}/">
+    {% picture "work/" + i.still, "", "(min-width: 64rem) 33vw, (min-width: 40rem) 50vw, 100vw", [480, 800, 1200] %}
+  {%- else %}
+  <div class="industry industry--empty">
+    <span class="industry__placeholder"><span class="flag">[ADD STILL: real estate or property]</span></span>
+  {%- endif %}
+    <span class="industry__text">
+      <span class="industry__title">{{ i.title }}</span>
+      <span class="industry__examples">{{ i.examples }}</span>
+    </span>
+  {%- if i.project %}</a>{% else %}</div>{% endif %}
+  {%- endfor %}
+</div>

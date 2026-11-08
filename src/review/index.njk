@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+title: Free Content Review and Story Session
+ogTitle: "Free Content Review and Story Session | Bryant Atelier"
+description: "Get a free content review or story session from Bryant Atelier, a Byron Bay film and content studio. A 10-minute video review of your content, or a 30-minute story call with a one-page concept, within 48 hours."
+ogImage: /assets/og/review.jpg
+---
+<header class="page-head on-dark">
+  <div class="container">
+    <span class="eyebrow">Free for businesses</span>
+    <h1>Start with something free. {% draft %}</h1>
+    <p class="lede muted">Two ways to get real value before you spend a dollar. Pick the one that fits, or have both. Either way, it's made for your business and lands within 48 hours. {% draft %}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#request">Request yours <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--ghost" href="#how">How it works</a>
+    </div>
+  </div>
+</header>
+
+<section class="section on-light" aria-label="The two free offers" style="padding-top: var(--space-xl)">
+  <div class="container">
+    {% set offersLink = false %}{% include "partials/offers.njk" %}
+  </div>
+</section>
+
+<section class="section on-mist" id="how" aria-labelledby="how-h">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2 id="how-h">three simple steps. {% draft %}</h2>
+    </div>
+    <div class="cols cols--3">
+      <article class="col">
+        <span class="col__num">01</span>
+        <h3>Send your details</h3>
+        <p class="col__body">Two minutes. Your business, your Instagram, and what you want more of. {% draft %}</p>
+      </article>
+      <article class="col">
+        <span class="col__num">02</span>
+        <h3>I review, or we talk</h3>
+        <p class="col__body">For a Content Review I go through your content myself. For a Story Session we book a 30-minute call at a time that suits you. {% draft %}</p>
+      </article>
+      <article class="col">
+        <span class="col__num">03</span>
+        <h3>It lands in your inbox</h3>
+        <p class="col__body">Your video review or one-page concept arrives within 48 hours. No obligation, no hard sell. {% draft %}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section on-light" aria-label="What clients say">
+  <div class="container">
+    <figure class="pull-quote">
+      <blockquote>&ldquo;[Bryant Atelier] shot the paid ad campaigns for my Buyers Agent Institute and the results spoke for themselves. More qualified leads at a lower cost, with creative that actually converted. They understand both the storytelling and the numbers behind it all.&rdquo;</blockquote>
+      <figcaption><strong>Ben Handler</strong>, Founder, Buyers Agent Institute</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section on-deep" id="request" aria-labelledby="request-h">
+  <div class="container contact">
+    <div class="contact__details">
+      <div>
+        <span class="eyebrow">Request yours</span>
+        <h2 id="request-h" style="margin-top: 1rem">tell me about your business.</h2>
+      </div>
+      <p class="muted">I'll reply within 48 hours. If you'd rather talk now, call me on <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>. {% draft %}</p>
+    </div>
+    <div>{% include "partials/review-form.njk" %}</div>
+  </div>
+</section>

@@ -17,9 +17,10 @@ homeReels: [1, 3]
     <h1>Stories with roots. <span class="serif">Content that works.</span></h1>
     <p class="hero__sub">Brand films, documentary, content and ads. Byron Bay to the Gold Coast.</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ site.bookingUrl }}">Book a call <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       <a class="btn btn--ghost" href="/work/">See the work</a>
     </div>
+    <p class="hero__proof"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>Best Byron Bay Film, Byron Bay International Film Festival 2025</p>
   </div>
 </section>
 
@@ -34,7 +35,7 @@ homeReels: [1, 3]
         <span class="eyebrow">01 / Services</span>
         <h2 id="services-h" style="margin-top: 1rem">made for what lasts.</h2>
       </div>
-      <p class="lede muted">From strategy and storytelling to filming and paid distribution, we run the full system so you stay focused on running your business.</p>
+      <p class="lede muted">From strategy and storytelling to filming and paid distribution, I run the full system so you stay focused on running your business.</p>
     </div>
     <div class="cols cols--3">
       <article class="col">
@@ -47,19 +48,33 @@ homeReels: [1, 3]
       <article class="col">
         <span class="col__num">02</span>
         <h3>Monthly Content</h3>
-        <p class="col__body">One shoot day a month. We turn it into a set of short-form pieces for social, all cut from the same footage. You show up every week, and it all looks like you. {% draft %}</p>
+        <p class="col__body">One shoot day a month. I turn it into a set of short-form pieces for social, all cut from the same footage. You show up every week, and it all looks like you. {% draft %}</p>
         <ul role="list"><li>One shoot day a month</li><li>Short-form for social</li><li>Reels &amp; stories</li></ul>
         <a class="text-link" href="/work/?type=content-ads">See the content <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       </article>
       <article class="col">
         <span class="col__num">03</span>
         <h3>Ads &amp; Growth</h3>
-        <p class="col__body">Every project starts with a clear plan. Great content only works if the right people see it. We run targeted paid distribution and lead capture systems that put your story in front of qualified prospects. We track what's working, refine what isn't, and continuously improve performance.</p>
-        <p class="col__body" style="font-size: var(--fs-small)">Strategy, ad creative, paid distribution and optimisation, run with our ads partner. {% draft %}</p>
+        <p class="col__body">Every project starts with a clear plan. Great content only works if the right people see it. I run targeted paid distribution and lead capture systems that put your story in front of qualified prospects. I track what's working, refine what isn't, and continuously improve performance.</p>
+        <p class="col__body" style="font-size: var(--fs-small)">I run the ads myself, from strategy and creative through to distribution and optimisation. Need your funnel and website sorted too? I work alongside growth partner <a href="https://biggsgrowth.com.au" rel="noopener" target="_blank">Biggs Growth</a>. {% draft %}</p>
         <ul role="list"><li>Strategy</li><li>Ad creative</li><li>Paid distribution</li><li>Optimisation</li></ul>
         <a class="text-link" href="/work/?type=content-ads">See the ads <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       </article>
     </div>
+  </div>
+</section>
+
+{# 3b. FREE OFFERS ----------------------------------------------------- #}
+<section class="section on-mist" id="free" aria-labelledby="free-h">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">02 / Start free</span>
+        <h2 id="free-h" style="margin-top: 1rem">start with something free. {% draft %}</h2>
+      </div>
+      <p class="lede muted">Two ways to get real value before you spend a dollar. Both made for your business, both within 48 hours. {% draft %}</p>
+    </div>
+    {% set offersLink = true %}{% include "partials/offers.njk" %}
   </div>
 </section>
 
@@ -68,7 +83,7 @@ homeReels: [1, 3]
   <div class="container section work-head" style="padding-bottom: var(--space-lg)">
     <div class="section-head section-head--split" style="margin-bottom: 0">
       <div>
-        <span class="eyebrow">02 / Work</span>
+        <span class="eyebrow">03 / Work</span>
         <h2 id="work-h" style="margin-top: 1rem">selected films.</h2>
       </div>
       <p class="lede muted">A few recent films. Brand work and documentary, often blended.</p>
@@ -96,12 +111,26 @@ homeReels: [1, 3]
   </div>
 </section>
 
+{# 4b. WHO I WORK WITH ------------------------------------------------- #}
+<section class="section on-light" id="who" aria-labelledby="who-h">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">04 / Who I work with</span>
+        <h2 id="who-h" style="margin-top: 1rem">businesses with a story worth telling. {% draft %}</h2>
+      </div>
+      <p class="lede muted">Mostly local businesses from Byron Bay to the Gold Coast, plus outdoor and lifestyle brands further afield. {% draft %}</p>
+    </div>
+    {% include "partials/industries.njk" %}
+  </div>
+</section>
+
 {# 5. APPROACH --------------------------------------------------------- #}
 <section class="section on-mist" id="approach" aria-labelledby="approach-h">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">03 / Approach</span>
-      <h2 id="approach-h">our approach.</h2>
+      <span class="eyebrow">05 / Approach</span>
+      <h2 id="approach-h">my approach.</h2>
     </div>
     <div class="cols cols--3">
       <article class="col">
@@ -128,7 +157,7 @@ homeReels: [1, 3]
 <section class="section on-dark proof" id="recognition" aria-labelledby="proof-h">
   <div class="container">
     <div class="proof__award">
-      <span class="eyebrow">04 / Recognition</span>
+      <span class="eyebrow">06 / Recognition</span>
       <span class="badge badge--inline"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>Byron Bay Film Festival winner</span>
       <h2 id="proof-h"><span class="serif">Flowing Wood</span>, Best Byron Bay Film, Byron Bay International Film Festival 2025.</h2>
     </div>
@@ -150,7 +179,7 @@ homeReels: [1, 3]
 <section class="section on-light" id="testimonials" aria-labelledby="testimonials-h">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">05 / Testimonials</span>
+      <span class="eyebrow">07 / Testimonials</span>
       <h2 id="testimonials-h">in their words.</h2>
     </div>
     {% include "partials/testimonials.njk" %}
@@ -164,12 +193,12 @@ homeReels: [1, 3]
       <span><span class="flag">[ADD PHOTO OF JOEL]</span><br><br>Portrait, 4:5, at least 1600px tall</span>
     </div>
     <div class="about__text">
-      <span class="eyebrow">06 / About</span>
+      <span class="eyebrow">08 / About</span>
       <h2 id="about-h">Joel Bryant.</h2>
-      <p>Bryant Atelier is run by Joel Bryant, a filmmaker and founder based in Byron Bay. {% draft %}</p>
-      <p>It brings two studios under one roof: Lineage Films for brand films and documentary, and Convert Studios for content and ads. {% draft %}</p>
-      <p>Joel directs, shoots and edits much of the work himself, from solo documentary shoots on remote coastline to campaign days with a small crew. {% draft %}</p>
-      <p class="muted">We come from a filmmaking background, which means we treat every piece of work as a story worth watching. That's the standard. The business outcomes follow.</p>
+      <p>I'm Joel Bryant, a filmmaker and founder based in Byron Bay. {% draft %}</p>
+      <p>Bryant Atelier brings my two studios under one roof: Lineage Films for brand films and documentary, and Convert Studios for content and ads. {% draft %}</p>
+      <p>I direct, shoot and edit much of the work myself, from solo documentary shoots on remote coastline to campaign days with a small crew. And I run the ads. {% draft %}</p>
+      <p class="muted">I come from a filmmaking background, which means I treat every piece of work as a story worth watching. That's the standard. The business outcomes follow.</p>
     </div>
   </div>
 </section>
@@ -178,7 +207,7 @@ homeReels: [1, 3]
 <section class="section on-deep" id="contact" aria-labelledby="contact-h">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">07 / Contact</span>
+      <span class="eyebrow">09 / Contact</span>
       <h2 id="contact-h">every great project starts here.</h2>
     </div>
     {% include "partials/contact-section.njk" %}

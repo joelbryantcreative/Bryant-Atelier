@@ -30,6 +30,17 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 | /privacy | "On this website, our enquiry form is handled by Formsubmit, and our videos are hosted and played by Vimeo." |
 | 404 page | "this page has moved on." and "It may have come from one of our old sites. The work, the films and the contact form all live here now." |
 
+## Free offers, first-person voice, industries (added after launch preview)
+
+- [ ] **Free offers copy** (`src/_includes/partials/offers.njk`, `/review/`): approve both offer cards (Content Review: video within 48 hours; Story Session: 30-minute call, then a one-page concept and shot list within 48 hours), the "How it works" steps, the request form questions, and the homepage "start with something free." section. All marked DRAFT.
+- [ ] **Check you're happy promising 48 hours** for both offers. It's on the homepage, the review page and the form.
+- [ ] **Voice is now "I"** across the site (privacy policy stays "we"; testimonials and the Good Old Days write-up are unchanged). Read it through once. Changed verbatim lines: Services intro, Monthly Content, Ads & Growth, Approach heading ("my approach."), About, Originals intro, Contact intro and success messages, 404, the Convivio Approach ("I sat each person…"), and the Bytropic Approach ("I worked closely with the talent").
+- [ ] **Ads & Growth line:** "I run the ads myself… I work alongside growth partner Biggs Growth" with a link to biggsgrowth.com.au. Confirm Jake is happy to be named and linked.
+- [ ] **"Who I work with" cards** (`src/_data/industries.json`): approve the six categories and their example lists. **[ADD]** a real estate or property still for the sixth card; until then it shows a placeholder.
+- [ ] **Header button** now says "Free review" and the hero button says "Get a free content review". "Book a call" is still on the contact page and in the mobile menu.
+- [ ] **Hero proof line:** "Best Byron Bay Film, Byron Bay International Film Festival 2025" now sits under the hero buttons.
+- [ ] **Form submissions:** free review requests go to the same Formsubmit inbox, with the subject "Free review request from bryantatelier.com.au".
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?

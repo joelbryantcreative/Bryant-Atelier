@@ -35,6 +35,7 @@ const page = (bg, inner) => `<html><head><style>${css}</style></head><body><div 
   for (const pr of projects) {
     await shoot(page(still(pr.still), `${pr.badge ? `<span class="badge">${pr.badge}</span>` : ""}<h1><em>${pr.title}</em></h1><p class="m">${pr.type}</p>`), path.join(outOg, pr.slug + ".jpg"));
   }
+  await shoot(page(still("industry-lifestyle.jpg"), `<span class="badge">Free, within 48 hours</span><h1>Free Content Review <em>&amp; Story Session</em></h1>`), path.join(outOg, "review.jpg"));
   // Icons
   const icon = (s) => `<html><head><style>${css} body{width:${s}px;height:${s}px;display:grid;place-items:center;background:#141414}
     .i{font-weight:600;font-size:${s * 0.62}px;letter-spacing:0;line-height:1;margin-top:-${s * 0.04}px} .u{position:absolute;left:30%;right:30%;bottom:${s * 0.17}px;height:${Math.max(2, s * 0.035)}px;background:#f4f1ea}</style></head><body><span class="i">B</span><span class="u"></span></body></html>`;

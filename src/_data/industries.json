@@ -1,0 +1,8 @@
+[
+  { "title": "Hospitality & venues", "examples": "Restaurants, chefs, private dining, event spaces", "still": "industry-hospitality.jpg", "project": "convivio-kalio" },
+  { "title": "Wellness & retreats", "examples": "Retreats, studios, clinics, breathwork, recovery", "still": "industry-wellness.jpg", "project": "koud-the-breath-haus" },
+  { "title": "Health & lifestyle brands", "examples": "Supplements, food and drink, activewear", "still": "industry-lifestyle.jpg", "project": "bytropic-nutrition" },
+  { "title": "Premium products", "examples": "Watches, design, fashion, e-commerce", "still": "industry-product.jpg", "project": "rogue-watches" },
+  { "title": "Outdoor & adventure", "examples": "Bikes, surf, travel, tours, outdoor gear", "still": "fat-fish-bikes.webp", "project": "fat-fish-bikes" },
+  { "title": "Real estate & property", "examples": "Agents, developments, homes, holiday stays", "still": null, "project": null }
+]

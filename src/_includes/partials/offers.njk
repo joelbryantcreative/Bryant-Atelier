@@ -1,0 +1,35 @@
+{#- The two free offers. Used on the homepage and /review/. Set offersLink=true to show buttons. -#}
+<div class="offers">
+  <article class="offer" id="content-review">
+    <div class="offer__top">
+      <h3>Free Content Review</h3>
+      <span class="offer__num" aria-hidden="true">1</span>
+    </div>
+    <span class="pill">Video in 48 hours</span>
+    <p class="offer__lede">I look at your Instagram, website and ads, then send you a 10-minute video walking through what I'd change. {% draft %}</p>
+    <ul class="offer__list" role="list">
+      <li><strong>What's working</strong> in your content right now</li>
+      <li><strong>Where it loses people</strong>, from the first frame to the call to action</li>
+      <li><strong>3 video ideas</strong> made for your business, ready to shoot</li>
+      <li><strong>Yours to keep</strong>, to rewatch and share with your team</li>
+    </ul>
+    <p class="offer__best">Best for businesses posting already, or about to start. Leads into Monthly Content and Ads.</p>
+    {%- if offersLink %}<a class="btn btn--primary" href="/review/?offer=content#request">Get my free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+  </article>
+  <article class="offer offer--dark" id="story-session">
+    <div class="offer__top">
+      <h3>Free Story Session</h3>
+      <span class="offer__num" aria-hidden="true">2</span>
+    </div>
+    <span class="pill">30-minute call</span>
+    <p class="offer__lede">A call to find the story behind your business, then a one-page creative concept you can keep. {% draft %}</p>
+    <ul class="offer__list" role="list">
+      <li><strong>A 30-minute call</strong>, by video or phone</li>
+      <li><strong>The story worth telling</strong>, found together</li>
+      <li><strong>A one-page concept and shot list</strong>, sent within 48 hours</li>
+      <li><strong>Yours to keep</strong>, whoever you end up filming with</li>
+    </ul>
+    <p class="offer__best">Best for brand films, founder portraits and documentary.</p>
+    {%- if offersLink %}<a class="btn btn--primary" href="/review/?offer=story#request">Book my free story session <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>{% endif %}
+  </article>
+</div>
