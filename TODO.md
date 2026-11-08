@@ -76,6 +76,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 ## Left out on purpose
 
 - **We Forest Earth and Grün Resort** are hidden, with no page, tile or sitemap entry. Their data is kept in `projects.json` with `"hidden": true`; remove that line once the film is ready.
+- **Client logos removed at your request:** the 21 that only appeared on Convert Studios (Bed Threads through Youfoodz, including Nivea and OGX Beauty). 13 remain: Koud, The Breath Haus, Convivio, Kalio, Bytropic, Rogue Watches, Ultimate Ears, Fat Fish Bikes, Salty Cabins, Away at Byron Bay, Craved This, We Forest Earth, Huckberry.
 - **Testimonials not used:** Rogue Watches, Alex Libby (Huckberry), Tucann (all Convert).
 - **Old assets not carried over:** Convert's aqua→blue gradient, Lineage's Canela/SF Pro fonts (swapped for Instrument Sans and Fraunces), the 4 MB hover GIFs, the unused Unsplash allowance, and the stray "Under Armour.svg" and "White Logo.png" files.
 - **Colour:** black and white, no accent colour (your choice, replacing the brief's Oxblood). Ink `#141414`, Bone `#F4F1EA`, Mist `#E9E6DF`, deep black `#0D0D0D` for the contact bands. Buttons are white on dark sections and black on light ones. Muted text on light backgrounds is `#5C5751` so it passes contrast.

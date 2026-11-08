@@ -16,17 +16,7 @@ clients = [
   ("Salty Cabins", C+"salty-cabins.png"), ("Away at Byron Bay", L+"Away at Byron Bay.png"),
   ("Craved This", C+"craved-this.png"), ("We Forest Earth", L+"We Forest Earth.png"),
   ("Huckberry", C+"huckberry.png"),
-  ("Bed Threads", C+"bed-threads.png"), ("beforeyouspeak Coffee", C+"before-you-speak.png"),
-  ("Belvedere Vodka", C+"belvedere-vodka.png"), ("Cenovis", C+"cenovis.png"),
-  ("Dometic", C+"dometic.png"), ("Kenzo", C+"kenzo.png"), ("Kyveli", C+"kyveli.png"),
-  ("Life Cykel", C+"life-cykel.png"), ("Mr Travel", C+"mttravel.png"),
-  ("My Muscle Chef", C+"my-muscle-chef.png"), ("Nivea", C+"nivea.png"),
-  ("OGX Beauty", C+"ogx.png"), ("Optimum Nutrition", C+"optimum-nutrition.png"),
-  ("Part Time Rangers", C+"part-time-rangers.png"), ("Rebel Sport", C+"rebel.png"),
-  ("Reeftip Drinks Co", C+"reeftip-drinks-co.png"), ("Revel Saunas", C+"revel-saunas.png"),
-  ("Sailing Whitsundays", C+"sailing-whitsundays.png"), ("Skydive Australia", C+"skydive-australia.png"),
-  ("Therabody", C+"therabody.png"), ("Youfoodz", C+"youfoodz.png"),
-]
+  ]
 # Brand marks laid over work tiles (Lineage pattern)
 tiles = {
   "tile-flowing-wood": L+"Flowing Wood.png", "tile-convivio": L+"Convivio.png",
