@@ -1,10 +1,24 @@
 <div class="contact">
   <div class="contact__details">
     <div class="book-card">
-      <h3>Book a call</h3>
-      <p>Prefer to talk it through? Call or email, or send the form and I'll set up a time. {% draft %}</p>
-      <div><a class="btn btn--bone" href="tel:{{ site.phoneHref }}">Call {{ site.phone }}</a></div>
-      <p class="muted" style="font-size: var(--fs-small)">Not ready to talk? <a href="/free-video-plan/">Start with a free video plan</a>. {% draft %}</p>
+      <h3>Pick whichever is easiest</h3>
+      <p class="muted">Fill in the form, send a text, or email me. {% draft %}</p>
+      <div class="ways">
+        <a class="btn btn--bone" href="{{ site.smsHref }}">Text {{ site.phoneLocal }}</a>
+        <a class="btn btn--ghost" href="tel:{{ site.phoneHref }}">Call</a>
+        <a class="btn btn--ghost" href="mailto:{{ site.email }}">Email me</a>
+      </div>
+      <p class="contact__direct">You'll speak with me directly, not a sales team. {% draft %}</p>
+    </div>
+    <div class="plan-check">
+      <h3>Not ready to talk? <a href="{{ site.ctaUrl }}">Get your free video plan</a> {% draft %}</h3>
+      <ul role="list">
+        <li>Your story in one line, and how I'd film it</li>
+        <li>3 short-form ideas for this month, with hooks</li>
+        <li>What others in your industry do well</li>
+        <li>What's holding your video back</li>
+      </ul>
+      <p class="muted" style="font-size: var(--fs-small)">Free, no obligation, within 2 business days.</p>
     </div>
     <dl>
       <div><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>

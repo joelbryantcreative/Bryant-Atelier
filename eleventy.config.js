@@ -76,6 +76,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("findSlug", (projects, slug) => projects.find((p) => p.slug === slug));
   eleventyConfig.addFilter("range1", (n) => Array.from({ length: n }, (_, i) => String(i + 1).padStart(2, "0")));
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v));
+  // FAQPage structured data from answered questions only (placeholders are left out).
+  eleventyConfig.addFilter("faqSchema", (faq = []) => ({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq
+      .filter((f) => !/\[(ADD|CHECK)/.test(f.a))
+      .map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  }));
   eleventyConfig.addFilter("absUrl", (p, base) => new URL(p, base).href);
   eleventyConfig.addFilter("nextProject", (projects, slug) => {
     const list = projects.filter((p) => !p.hidden);

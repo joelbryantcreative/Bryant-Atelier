@@ -1,0 +1,10 @@
+<div class="faq">
+  {%- for f in faq %}
+  <details class="faq__item"{% if loop.first %} open{% endif %}>
+    <summary>{{ f.q }}</summary>
+    <div class="faq__a"><p>{{ f.a | flags | safe }}{% if f.draft and f.a.indexOf('[ADD') == -1 %} {% draft %}{% endif %}</p></div>
+  </details>
+  {%- endfor %}
+</div>
+{#- FAQ structured data: only answered questions, never placeholders -#}
+<script type="application/ld+json">{{ faq | faqSchema | json | safe }}</script>

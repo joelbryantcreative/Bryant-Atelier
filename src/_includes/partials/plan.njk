@@ -12,15 +12,21 @@
   </li>
   <li class="plan__part">
     <span class="plan__num" aria-hidden="true">3</span>
+    <h3>What others in your industry do well</h3>
+    <p>A quick look at who's getting video right in your space, and what you can borrow from them. {% draft %}</p>
+  </li>
+  <li class="plan__part">
+    <span class="plan__num" aria-hidden="true">4</span>
     <h3>What's holding your video back</h3>
     <p>Honest notes on your website, socials and ads. Not posting yet? Then it's where to start. {% draft %}</p>
   </li>
 </ol>
 <div class="plan__delivery">
-  <p><strong>How you get it:</strong> a 10-minute personal video walkthrough and a one-page plan, in your inbox within 48 hours. Then, if you like, a call to talk it through. {% draft %}</p>
+  <p><strong>How you get it:</strong> a 10-minute personal video walkthrough and a one-page plan, in your inbox within 2 business days. Then, if you like, a call to talk it through. {% draft %}</p>
   {%- if planLink %}
   <div class="plan__cta">
     <a class="btn btn--primary" href="{{ site.ctaUrl }}#request">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    {% include "partials/text-alt.njk" %}
     <span class="plan__reassure">No obligation. Useful even if we never work together. {% draft %}</span>
   </div>
   {%- endif %}

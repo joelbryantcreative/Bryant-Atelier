@@ -9,7 +9,7 @@
       </ul>
     </nav>
     <div class="site-header__actions">
-      <a class="site-header__link" href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Get in touch</a>
+      <a class="site-header__link" href="tel:{{ site.phoneHref }}"><span class="visually-hidden">Call </span>{{ site.phoneLocal }}</a>
       <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }}</a>
     </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
@@ -33,7 +33,8 @@
     <a class="btn btn--ghost" href="{{ site.bookingUrl }}">Book a call</a>
     <div class="mobile-nav__contact">
       <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <a href="tel:{{ site.phoneHref }}">{{ site.phone }}</a>
+      <a href="tel:{{ site.phoneHref }}">Call {{ site.phoneLocal }}</a>
+      <a href="{{ site.smsHref }}">Text {{ site.phoneLocal }}</a>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 # Free Video Plan: how to make one
 
-Target: **45 minutes or less per plan**, sent within 48 hours. Not published on the website (this folder isn't part of the build).
+Target: **45 minutes or less per plan**, sent within 2 business days. Not published on the website (this folder isn't part of the build).
 
 ---
 
@@ -12,6 +12,7 @@ Look at the business the way a customer would. Note anything that makes you go "
 - [ ] **Instagram:** last 12 posts. What gets the most likes or comments? Is there any video? Who is on camera?
 - [ ] **Google reviews:** what customers praise in their own words (this is often the real story)
 - [ ] **Ads:** check the Meta Ad Library (facebook.com/ads/library) for their name
+- [ ] **Their industry:** find 2 or 3 businesses like theirs (anywhere in the world) doing video well. Note what they do: who's on camera, the format, the hook
 - [ ] **The form:** what they're interested in, budget, and anything they told you
 
 Write down:
@@ -43,7 +44,12 @@ Copy this into a Google Doc or Canva page with your branding, and export as PDF.
 > | 2 | | | |
 > | 3 | | | |
 >
-> **3. What's holding your video back**
+> **3. What others in your industry do well**
+> - [Business, with a link]: [what they do well, in one line]
+> - [Business, with a link]: [what they do well]
+> - **What you can borrow:** [one idea]
+>
+> **4. What's holding your video back**
 > - [Honest note 1, e.g. "No faces: people follow people, and your team never appears."]
 > - [Honest note 2]
 > - [Quick win they can do this week]
@@ -67,9 +73,10 @@ Record your screen and face (Loom, or QuickTime plus screen recording). Aim for 
 
 1. **Hi [name] (30 sec):** what you looked at, and what stood out first.
 2. **Your story (2 min):** say the one line, explain why, and show the reviews or posts that prove it.
-3. **The 3 ideas (3 to 4 min):** for each one, say the hook out loud and describe the shot.
-4. **What's holding you back (2 min):** scroll their Instagram or site and point at specifics. Be kind and direct.
-5. **Close (30 sec):** "The plan's yours either way. If you want me to shoot it, reply and we'll book a call."
+3. **The 3 ideas (3 min):** for each one, say the hook out loud and describe the shot.
+4. **Who's doing it well (1 min):** show one or two examples from their industry.
+5. **What's holding you back (2 min):** scroll their Instagram or site and point at specifics. Be kind and direct.
+6. **Close (30 sec):** "The plan's yours either way. If you want me to shoot it, reply and we'll book a call."
 
 ---
 
