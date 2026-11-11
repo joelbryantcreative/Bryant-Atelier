@@ -31,7 +31,7 @@ const page = (bg, inner) => `<html><head><style>${css}</style></head><body><div 
   const tmp = path.join(root, "scripts", ".og-tmp.html");
   const load = async (html) => { fs.writeFileSync(tmp, html); await p.goto("file://" + tmp, { waitUntil: "load" }); };
   const shoot = async (html, file) => { await load(html); await p.evaluate(() => document.fonts.ready); await p.screenshot({ path: file, type: "jpeg", quality: 84 }); };
-  await shoot(page(still("flowing-wood.jpg"), `<h1>Stories with roots. <em>Content that works.</em></h1><p class="m">Brand films, documentary, short-form content and ads. Based in Byron Bay, available worldwide.</p>`), path.join(outOg, "og-default.jpg"));
+  await shoot(page(still("flowing-wood.jpg"), `<h1>Stories worth telling. <em>Content that works.</em></h1><p class="m">Brand films, documentary, short-form content and ads. Based in Byron Bay, available worldwide.</p>`), path.join(outOg, "og-default.jpg"));
   for (const pr of projects) {
     await shoot(page(still(pr.still), `${pr.badge ? `<span class="badge">${pr.badge}</span>` : ""}<h1><em>${pr.title}</em></h1><p class="m">${pr.type}</p>`), path.join(outOg, pr.slug + ".jpg"));
   }

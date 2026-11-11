@@ -58,6 +58,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 - [ ] **Free Video Plan:** now **4 parts** (added "What others in your industry do well") and **"within 2 business days"** instead of 48 hours, on every page, the form and the template.
 - [ ] **Still needed from you:** starting prices, years of experience, Google rating (if you have reviews), photos and a few lines on why you started, ABN.
 
+- [ ] **Headline** is now "Stories worth telling. Content that works." (replacing the brief's "Stories with roots."). The Originals page keeps Lineage's "stories with roots." Update your Instagram bio and any print to match.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
