@@ -259,6 +259,8 @@ body.nav-open .mobile-nav { opacity: 1; visibility: visible; transform: none; tr
   .nav-toggle, .mobile-nav { display: none; }
 }
 @media (min-width: 80rem) { .site-header__link { display: inline-block; } }
+/* Fifth menu item only where there is room; it is always in the phone menu */
+@media (max-width: 71.99rem) { .site-nav .nav-wide { display: none; } }
 
 /* Logo marquee */
 .logos { padding-block: var(--space-lg); border-top: 1px solid var(--rule-on-dark); }

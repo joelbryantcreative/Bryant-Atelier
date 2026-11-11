@@ -34,6 +34,11 @@
       "href": "/#services"
     },
     {
+      "label": "Who I help",
+      "href": "/#who",
+      "wideOnly": true
+    },
+    {
       "label": "How I work",
       "href": "/#approach"
     },
