@@ -6,9 +6,12 @@
         {%- for item in site.nav %}
         <li><a href="{{ item.href }}"{% if page.url == item.href or (item.href != '/' and item.href.indexOf('#') == -1 and page.url.indexOf(item.href) == 0) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {%- endfor %}
-        <li><a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }}</a></li>
       </ul>
     </nav>
+    <div class="site-header__actions">
+      <a class="site-header__link" href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Get in touch</a>
+      <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }}</a>
+    </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-nav-toggle>
       <span class="nav-toggle__bars" aria-hidden="true"></span>
       <span class="visually-hidden">Menu</span>

@@ -247,10 +247,18 @@ body.nav-open .mobile-nav { opacity: 1; visibility: visible; transform: none; tr
 .mobile-nav__foot .btn { width: 100%; }
 .mobile-nav__contact { display: grid; gap: 0.25rem; color: var(--muted-on-dark); }
 
+.site-header__actions { display: none; }
+.site-header__link { display: none; font-size: 0.9375rem; font-weight: 500; padding-bottom: 0.15rem; border-bottom: 1px solid rgba(244, 241, 234, 0.5); transition: border-color 0.2s; }
+.site-header__link:hover, .site-header__link[aria-current="page"] { border-bottom-color: currentColor; }
 @media (min-width: 60rem) {
-  .site-nav { display: block; }
+  /* Logo left, menu centred on the page, actions right */
+  .site-header__inner { display: grid; grid-template-columns: 1fr auto 1fr; }
+  .site-header__inner > a:first-child { justify-self: start; }
+  .site-nav { display: block; justify-self: center; }
+  .site-header__actions { display: flex; align-items: center; gap: 1.5rem; justify-self: end; }
   .nav-toggle, .mobile-nav { display: none; }
 }
+@media (min-width: 80rem) { .site-header__link { display: inline-block; } }
 
 /* Logo marquee */
 .logos { padding-block: var(--space-lg); border-top: 1px solid var(--rule-on-dark); }
