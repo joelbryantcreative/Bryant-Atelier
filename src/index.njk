@@ -20,10 +20,13 @@ homeReels: [1, 3]
       <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       <a class="btn btn--ghost" href="/work/">See the work</a>
     </div>
-    <p class="hero__text">{% include "partials/text-alt.njk" %}</p>
+    <p class="hero__text">{%- if site.portrait %}<span class="hero__avatar">{% picture "people/" + site.portrait, "", "40px", [80] %}</span>{% endif %}{% include "partials/text-alt.njk" %}</p>
     <p class="hero__proof"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>Best Byron Bay Film, Byron Bay International Film Festival 2025</p>
   </div>
 </section>
+
+{# 1b. FACE NEAR THE TOP (Biggs Growth pattern) ------------------------ #}
+{% include "partials/founder-band.njk" %}
 
 {# 2. CLIENT LOGOS ----------------------------------------------------- #}
 {% include "partials/logo-strip.njk" %}

@@ -754,3 +754,43 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 .plan-check ul { display: grid; gap: 0.4rem; list-style: none; padding: 0; margin: 0; }
 .plan-check li { position: relative; padding-left: 1.5rem; opacity: 0.9; }
 .plan-check li::before { content: ""; position: absolute; left: 0.15rem; top: 0.5rem; width: 0.65rem; height: 0.32rem; border-left: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(-45deg); }
+
+/* Founder band: proof | portrait | quote, straight after the hero */
+.founder-band { padding-block: var(--space-xl); }
+.founder-band__grid { display: grid; gap: 1rem; align-items: end; }
+.founder-portrait { order: -1; position: relative; margin: 0 auto; width: min(100%, 24rem); }
+@media (min-width: 64rem) {
+  .founder-band__grid { grid-template-columns: 1fr minmax(20rem, 26rem) 1fr; gap: 1.5rem; }
+  .founder-portrait { order: 0; width: 100%; }
+}
+.founder-portrait picture, .founder-portrait img, .founder-portrait__placeholder {
+  display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: 999px 999px 1.25rem 1.25rem; overflow: hidden;
+}
+.founder-portrait__placeholder {
+  display: grid; place-items: center; text-align: center; padding: 2rem; color: var(--slate);
+  background: repeating-linear-gradient(135deg, rgba(20,20,20,0.05) 0 12px, rgba(20,20,20,0.09) 12px 24px);
+  border: 1px dashed rgba(20, 20, 20, 0.35); font-size: var(--fs-small);
+}
+.founder-portrait__tag {
+  position: absolute; left: 50%; bottom: 1.25rem; transform: translateX(-50%);
+  background: var(--bone); color: var(--ink); border-radius: 999px; padding: 0.55rem 1.1rem;
+  font-size: 0.9375rem; white-space: nowrap; box-shadow: 0 8px 24px -12px rgba(0,0,0,0.35);
+}
+.founder-portrait__tag strong { font-weight: 600; }
+.founder-card { display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; border-radius: 1.25rem; padding: clamp(1.4rem, 2.5vw, 2rem); margin: 0; }
+.founder-card--proof { background: var(--ink); color: var(--bone); }
+.founder-card__big { font-size: clamp(2rem, 3.4vw, 2.75rem); font-weight: 600; letter-spacing: -0.045em; line-height: 1; margin-top: 0.5rem; }
+.founder-card__sub { color: var(--muted-on-dark); }
+.founder-card__laurels { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; margin: 0.25rem 0; }
+.founder-card__laurels img { height: 2.75rem; width: auto; }
+.founder-card__stats { font-size: var(--fs-small); color: var(--muted-on-dark); }
+.founder-card__stats strong { color: var(--bone); font-size: 1.25rem; font-weight: 600; }
+.founder-card--quote { background: #fff; color: var(--ink); border: 1px solid var(--rule-on-light); }
+.founder-card--quote blockquote { font-family: var(--font-serif); font-size: 1.0625rem; line-height: 1.45; }
+.founder-card--quote figcaption { display: flex; align-items: center; gap: 0.85rem; font-size: var(--fs-small); margin-top: auto; padding-top: 0.5rem; }
+.founder-card--quote figcaption picture, .founder-card--quote figcaption img { width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; overflow: hidden; flex: none; }
+.founder-card--quote .quote__role { display: block; color: var(--muted-on-light); }
+/* Hero avatar beside "Or text Joel" (appears once the portrait is set) */
+.hero__text { display: flex; align-items: center; gap: 0.6rem; }
+.hero__avatar, .hero__avatar img { width: 2.25rem; height: 2.25rem; border-radius: 50%; overflow: hidden; display: block; object-fit: cover; flex: none; border: 1.5px solid var(--bone); }

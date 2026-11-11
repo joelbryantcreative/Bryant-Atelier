@@ -1,0 +1,35 @@
+{#- Face near the top, in the Biggs Growth layout: proof | portrait | client quote.
+    Set "portrait" in site.json (a file in src/_img/people/) to replace the placeholder. -#}
+<section class="founder-band on-light" aria-label="Meet Joel Bryant">
+  <div class="container founder-band__grid">
+    <div class="founder-card founder-card--proof">
+      <span class="badge badge--inline">Byron Bay Film Festival winner</span>
+      <p class="founder-card__big">Best Byron Bay Film</p>
+      <p class="founder-card__sub"><span class="serif">Flowing Wood</span>, Byron Bay International Film Festival 2025</p>
+      <span class="founder-card__laurels">{% for f in festivals %}<img src="/assets/laurels/{{ f.laurel }}" alt="{{ f.festival }}, {{ f.result }} {{ f.year }}" loading="lazy" decoding="async">{% endfor %}</span>
+      <p class="founder-card__stats"><strong>4</strong> film festivals · <strong>3</strong> countries</p>
+      <a class="text-link" href="/work/flowing-wood/">Watch Flowing Wood <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <figure class="founder-portrait">
+      {%- if site.portrait %}
+      {% picture "people/" + site.portrait, "Joel Bryant, filmmaker and founder of Bryant Atelier", "(min-width: 64rem) 26rem, 80vw", [480, 800, 1200] %}
+      {%- else %}
+      <div class="founder-portrait__placeholder" role="img" aria-label="Photo of Joel Bryant to come">
+        <span><span class="flag">[ADD PHOTO OF JOEL]</span><br><br>Vertical, 4:5, at least 1600px tall.<br>Looking at camera, ideally with a camera in hand.</span>
+      </div>
+      {%- endif %}
+      <figcaption class="founder-portrait__tag"><strong>Joel Bryant</strong>, filmmaker</figcaption>
+    </figure>
+
+    <figure class="founder-card founder-card--quote">
+      <p class="quote__headline">&ldquo;More qualified leads at a lower cost&rdquo;</p>
+      <ul class="quote__tags" role="list"><li>Paid ads</li><li>Ad creative</li></ul>
+      <blockquote>&ldquo;More qualified leads at a lower cost, with creative that actually converted. They understand both the storytelling and the numbers behind it all.&rdquo;</blockquote>
+      <figcaption>
+        {% picture "people/ben-handler.jpg", "", "48px", [96] %}
+        <span><span class="quote__name">Ben Handler</span><span class="quote__role">Founder, Buyers Agent Institute</span></span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
