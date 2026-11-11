@@ -233,8 +233,8 @@ body.nav-open .nav-toggle__bars::after { transform: translateY(-6px) rotate(-45d
 .mobile-nav {
   position: fixed; inset: var(--header-h) 0 0 0; z-index: 49;
   background: var(--ink); color: var(--bone);
-  padding: var(--space-lg) var(--container-pad) var(--space-lg);
-  display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-lg);
+  padding: var(--space-md) var(--container-pad) var(--space-md);
+  display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-md);
   overflow-y: auto;
   opacity: 0; visibility: hidden; transform: translateY(-0.5rem);
   transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0s linear 0.3s;
@@ -242,7 +242,7 @@ body.nav-open .nav-toggle__bars::after { transform: translateY(-6px) rotate(-45d
 body.nav-open { overflow: hidden; }
 body.nav-open .mobile-nav { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
 .mobile-nav ul { display: grid; gap: 0.25rem; }
-.mobile-nav li a { display: block; font-size: 2.25rem; font-weight: 500; letter-spacing: -0.03em; padding: 0.3rem 0; }
+.mobile-nav li a { display: block; font-size: 1.5rem; font-weight: 500; letter-spacing: -0.025em; padding: 0.2rem 0; }
 .mobile-nav__foot { display: grid; gap: var(--space-md); }
 .mobile-nav__foot .btn { width: 100%; }
 .mobile-nav__contact { display: grid; gap: 0.25rem; color: var(--muted-on-dark); }
