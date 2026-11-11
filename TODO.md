@@ -60,6 +60,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Headline** is now "Stories worth telling. Content that works." (replacing the brief's "Stories with roots."). The Originals page keeps Lineage's "stories with roots." Update your Instagram bio and any print to match.
 
+- [ ] **Hero sentence** (DRAFT): "I'm a filmmaker helping businesses turn their story into brand films, documentaries, short-form content and ads that bring in customers." The footer keeps the shorter list version.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
