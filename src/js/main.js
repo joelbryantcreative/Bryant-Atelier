@@ -310,13 +310,6 @@
     });
   });
 
-  // /review/?offer=story preselects the offer
-  var offerParam = new URLSearchParams(window.location.search).get("offer");
-  if (offerParam) {
-    var radio = document.querySelector('[data-offer="' + offerParam + '"]');
-    if (radio) radio.checked = true;
-  }
-
   // Formsubmit no-JS redirect lands on ?sent=1
   if (/[?&]sent=1/.test(window.location.search)) {
     var s = document.querySelector("[data-form-success]");

@@ -30,16 +30,16 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 | /privacy | "On this website, our enquiry form is handled by Formsubmit, and our videos are hosted and played by Vimeo." |
 | 404 page | "this page has moved on." and "It may have come from one of our old sites. The work, the films and the contact form all live here now." |
 
-## Free offers, first-person voice, industries (added after launch preview)
+## Free Video Plan, first-person voice, industries (added after launch preview)
 
-- [ ] **Free offers copy** (`src/_includes/partials/offers.njk`, `/review/`): approve both offer cards (Content Review: video within 48 hours; Story Session: 30-minute call, then a one-page concept and shot list within 48 hours), the "How it works" steps, the request form questions, and the homepage "start with something free." section. All marked DRAFT.
-- [ ] **Check you're happy promising 48 hours** for both offers. It's on the homepage, the review page and the form.
+- [ ] **Free Video Plan copy** (`src/_includes/partials/plan.njk`, `/free-video-plan/`): the single free offer, which replaces the Content Review and Story Session. Approve the three parts (your story in one line, 3 short-form ideas with hooks, what's holding your video back), the "How you get it" line, the page headline "your free story and content plan.", the "How it works" steps and the form questions. All marked DRAFT. Use `docs/free-video-plan-template.md` to make each plan.
+- [ ] **Do 3 plans before launch** and time them. If one takes more than 45 minutes, trim the template before promising 48 hours to everyone. Sending those 3 plans unprompted to businesses you'd love to work with doubles as outreach.
 - [ ] **Voice is now "I"** across the site (privacy policy stays "we"; testimonials and the Good Old Days write-up are unchanged). Read it through once. Changed verbatim lines: Services intro, Monthly Content, Ads & Growth, Approach heading ("my approach."), About, Originals intro, Contact intro and success messages, 404, the Convivio Approach ("I sat each person…"), and the Bytropic Approach ("I worked closely with the talent").
 - [ ] **Ads & Growth line:** "I run the ads myself… I work alongside growth partner Biggs Growth" with a link to biggsgrowth.com.au. Confirm Jake is happy to be named and linked.
 - [ ] **"Who I work with" cards** (`src/_data/industries.json`): approve the six categories and their example lists. **[ADD]** a real estate or property still for the sixth card; until then it shows a placeholder.
-- [ ] **Header button** now says "Free review" and the hero button says "Get a free content review". "Book a call" is still on the contact page and in the mobile menu.
+- [ ] **Buttons:** every offer button now says "Get your free video plan" (header, hero, mobile menu, How I work, Client wins, Meet the filmmaker). "Book a call" stays on the contact page, in the mobile menu and next to the form. Old `/review/` links redirect to `/free-video-plan/`.
 - [ ] **Hero proof line:** "Best Byron Bay Film, Byron Bay International Film Festival 2025" now sits under the hero buttons.
-- [ ] **Form submissions:** free review requests go to the same Formsubmit inbox, with the subject "Free review request from bryantatelier.com.au".
+- [ ] **Form submissions:** plan requests go to the same Formsubmit inbox with the subject "Free video plan request from bryantatelier.com.au". The form includes an optional budget band (Under $2,000 to $10,000+) so you can spot brand film leads. **Price anchor:** only add "Usually $X" if you charge that for creative development.
 
 ## Homepage sections modelled on Biggs Growth
 

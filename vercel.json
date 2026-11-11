@@ -590,6 +590,16 @@
       "statusCode": 301
     },
     {
+      "source": "/review/",
+      "destination": "/free-video-plan/",
+      "statusCode": 301
+    },
+    {
+      "source": "/review",
+      "destination": "/free-video-plan/",
+      "statusCode": 301
+    },
+    {
       "source": "/work/we-forest-earth.html",
       "destination": "/work/",
       "statusCode": 301

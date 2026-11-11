@@ -54,6 +54,8 @@ Nothing here has been deployed and no DNS has been changed.
 | Request | Goes to |
 |---|---|
 | `https://www.bryantatelier.com.au/*` | `https://bryantatelier.com.au/*` |
+| `/review/` | `/free-video-plan/` |
+| `/review` | `/free-video-plan/` |
 | `/work/we-forest-earth.html` | `/work/` |
 | `/work/grun-resort.html` | `/work/` |
 | `/work/:slug.html` | `/work/:slug/` |

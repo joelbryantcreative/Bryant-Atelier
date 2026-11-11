@@ -17,7 +17,7 @@ homeReels: [1, 3]
     <h1>Stories with roots. <span class="serif">Content that works.</span></h1>
     <p class="hero__sub">Brand films, documentary, short-form content and ads. Based in Byron Bay, available worldwide.</p>
     <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       <a class="btn btn--ghost" href="/work/">See the work</a>
     </div>
     <p class="hero__proof"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1l2 4.3 4.7.6-3.4 3.2.9 4.6L8 11.5l-4.2 2.2.9-4.6L1.3 5.9 6 5.3z"/></svg>Best Byron Bay Film, Byron Bay International Film Festival 2025</p>
@@ -64,17 +64,17 @@ homeReels: [1, 3]
   </div>
 </section>
 
-{# 3b. FREE OFFERS ----------------------------------------------------- #}
+{# 3b. FREE VIDEO PLAN ------------------------------------------------- #}
 <section class="section on-mist" id="free" aria-labelledby="free-h">
   <div class="container">
     <div class="section-head section-head--split">
       <div>
         <span class="eyebrow">02 / Start free</span>
-        <h2 id="free-h" style="margin-top: 1rem">start with something free. {% draft %}</h2>
+        <h2 id="free-h" style="margin-top: 1rem">your free story and content plan. {% draft %}</h2>
       </div>
-      <p class="lede muted">Two ways to get real value before you spend a dollar. Both made for your business, both within 48 hours. {% draft %}</p>
+      <p class="lede muted">Not sure what to film, or what your story is? Tell me about your business and I'll send you a plan made for it, within 48 hours. {% draft %}</p>
     </div>
-    {% set offersLink = true %}{% include "partials/offers.njk" %}
+    {% set planLink = true %}{% include "partials/plan.njk" %}
   </div>
 </section>
 
@@ -139,8 +139,8 @@ homeReels: [1, 3]
       <li class="step">
         <span class="step__num">01</span>
         <h3>Start free</h3>
-        <p class="step__sub">Your review or story session</p>
-        <p class="step__body">I look at your content, or we talk through your story, and you get clear ideas back within 48 hours. {% draft %}</p>
+        <p class="step__sub">Your free video plan</p>
+        <p class="step__body">I study your business and send you a plan: your story, 3 ideas to shoot, and what to fix. Within 48 hours. {% draft %}</p>
         <p class="step__get"><span>You get</span>Clear ideas, even if we don't work together {% draft %}</p>
       </li>
       <li class="step">
@@ -168,7 +168,7 @@ homeReels: [1, 3]
     <div class="cta-strip">
       <p><strong>Step one is free.</strong> Find out what your content could be doing. {% draft %}</p>
       <div class="cta-strip__actions">
-        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
         <a class="text-link" href="/contact/">Get in touch</a>
       </div>
     </div>
@@ -226,8 +226,8 @@ homeReels: [1, 3]
       </a>
       <div class="win win--cta">
         <h3>Want a win like these? {% draft %}</h3>
-        <p class="muted">Your free content review shows where your content can do more. {% draft %}</p>
-        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <p class="muted">Your free video plan shows what to film next, and why it will work. {% draft %}</p>
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </div>
@@ -259,7 +259,7 @@ homeReels: [1, 3]
       <p class="about__pull">I come from a filmmaking background, which means I treat every piece of work as a story worth watching. That's the standard. The business outcomes follow.</p>
       <p class="muted"><span class="flag">[ADD: why you started, and something about you outside work]</span></p>
       <div class="about__actions">
-        <a class="btn btn--primary" href="{{ site.ctaUrl }}">Get a free content review <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
         <a class="text-link" href="/contact/">Get in touch</a>
       </div>
     </div>

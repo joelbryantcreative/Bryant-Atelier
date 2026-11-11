@@ -42,6 +42,8 @@ const convert = [
 ];
 // Old paths requested on the new domain itself (e.g. someone edits the hostname by hand).
 const sameHost = [
+  ["/review/", "/free-video-plan/"],
+  ["/review", "/free-video-plan/"],
   ["/work/we-forest-earth.html", "/work/"],
   ["/work/grun-resort.html", "/work/"],
   ["/work/:slug.html", "/work/:slug/"],
