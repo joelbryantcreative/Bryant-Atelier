@@ -259,9 +259,16 @@ homeReels: [1, 3]
 {# 8. ABOUT + WHY WORK WITH ME ------------------------------------------ #}
 <section class="section on-mist" id="about" aria-labelledby="about-h">
   <div class="container about">
+    {%- if site.portrait %}
+    <figure class="about__photo">
+      {% picture "people/" + site.portrait, "Joel Bryant, founder of Bryant Atelier, on the coast", "(min-width: 56rem) 40vw, 90vw", [480, 800, 1200] %}
+      <figcaption class="about__photo-note"><span class="flag">[ADD 2 OR 3 MORE PHOTOS: on set, in the field, editing, for a collage like Jake's]</span></figcaption>
+    </figure>
+    {%- else %}
     <div class="photo-placeholder photo-placeholder--arch" role="img" aria-label="Photo of Joel Bryant to come">
       <span><span class="flag">[ADD PHOTO OF JOEL]</span><br><br>Portrait, 4:5, at least 1600px tall.<br>Two or three extra photos (on set, in the field) make a collage like Jake's.</span>
     </div>
+    {%- endif %}
     <div class="about__text">
       <span class="eyebrow">08 / Meet the filmmaker</span>
       <h2 id="about-h">Joel Bryant.</h2>

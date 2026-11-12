@@ -62,7 +62,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Hero sentence** (DRAFT): "Your one-stop creative workshop. We turn your story into brand films, documentaries, short-form content and ads that bring in customers." ("Atelier" is French for workshop.) The footer keeps the shorter list version.
 
-- [ ] **[ADD] Portrait for the band under the hero** (proof card | your photo | Ben's quote, like Jake's). Put the photo in `src/_img/people/` (e.g. `joel.jpg`) and set `"portrait": "joel.jpg"` in `src/_data/site.json`. That swaps the placeholder for your photo, and also adds a small round thumbnail of you next to "Or text Joel" in the hero. Or just send it to me.
+- [x] **Portrait added** (`src/_img/people/joel.jpg`): in the band under the hero, as a small avatar beside "Or text Joel" in the hero, and in Meet the filmmaker. **[ADD]** 2 or 3 more photos (on set, in the field, editing) to turn the About photo into a collage like Jake's.
 
 ## [CHECK] Facts and permissions
 
