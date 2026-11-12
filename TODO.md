@@ -36,7 +36,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 - [ ] **Do 3 plans before launch** and time them. If one takes more than 45 minutes, trim the template before promising 48 hours to everyone. Sending those 3 plans unprompted to businesses you'd love to work with doubles as outreach.
 - [ ] **Voice is "we"** across the site (switched back from "I" for a more professional, studio feel). Where Lineage and Convert originally said "we", their exact wording is restored (e.g. "our approach.", "We sat each person…", "Email us, give us a call…"). Joel is named where a person matters: "Or text Joel", the About section, "You work with Joel", "You'll speak with Joel directly", and the FAQ answer "Joel, directly." The Craved This Approach now says "just Joel on camera" (originally "just myself on camera"). Testimonials are unchanged.
 - [ ] **Ads & Growth line:** "I run the ads myself… I work alongside growth partner Biggs Growth" with a link to biggsgrowth.com.au. Confirm Jake is happy to be named and linked.
-- [ ] **"Who I work with" cards** (`src/_data/industries.json`): approve the six categories and their example lists. **[ADD]** a real estate or property still for the sixth card; until then it shows a placeholder.
+- [ ] **"Who I work with" cards** (`src/_data/industries.json`): approve the six categories and their example lists. **[ADD]** a real estate or property still for the sixth card. That card is hidden for now; remove `"hidden": true` in `industries.json` once the still is in `src/_img/work/`.
 - [ ] **Buttons:** every offer button now says "Get your free video plan" (header, hero, mobile menu, How I work, Client wins, Meet the filmmaker). "Book a call" stays on the contact page, in the mobile menu and next to the form. Old `/review/` links redirect to `/free-video-plan/`.
 - [ ] **Hero proof:** the small award line was removed from the hero (the award card right below shows it). Once you have your Google rating and years of experience, add proof chips to the hero like Jake's.
 - [ ] **Form submissions:** plan requests go to the same Formsubmit inbox with the subject "Free video plan request from bryantatelier.com.au". The form includes an optional budget band (Under $2,000 to $10,000+) so you can spot brand film leads. **Price anchor:** only add "Usually $X" if you charge that for creative development.
@@ -66,6 +66,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Experience:** "Nearly 10 years making films and content" now shows as a chip in the hero and a pill in Meet the filmmaker (`site.json` → `experience`). Change the wording there if "films and content" isn't quite right.
 - [ ] **Google reviews:** the hero has a ready-made rating chip that stays hidden until you fill in `site.json` → `google.rating` (and optionally `reviewCount`). Only switch it on once the reviews are live on Google.
+
+- [ ] **How we work:** heading is now "how we work." (matching the menu) with the note "On Monthly Content, steps 2 to 4 repeat every month." (DRAFT). **[ADD]** a rough brand film timeline to show on the steps and in the FAQ.
 
 ## [CHECK] Facts and permissions
 
