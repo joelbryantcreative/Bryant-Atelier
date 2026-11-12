@@ -60,7 +60,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Headline** is now "Stories worth telling. Content that works." (replacing the brief's "Stories with roots."). The Originals page keeps Lineage's "stories with roots." Update your Instagram bio and any print to match.
 
-- [ ] **Hero sentence** (DRAFT): "I'm a filmmaker helping businesses turn their story into brand films, documentaries, short-form content and ads that bring in customers." The footer keeps the shorter list version.
+- [ ] **Hero sentence** (DRAFT): "Your one-stop creative workshop. We turn your story into brand films, documentaries, short-form content and ads that bring in customers." ("Atelier" is French for workshop.) The footer keeps the shorter list version.
 
 - [ ] **[ADD] Portrait for the band under the hero** (proof card | your photo | Ben's quote, like Jake's). Put the photo in `src/_img/people/` (e.g. `joel.jpg`) and set `"portrait": "joel.jpg"` in `src/_data/site.json`. That swaps the placeholder for your photo, and also adds a small round thumbnail of you next to "Or text Joel" in the hero. Or just send it to me.
 
