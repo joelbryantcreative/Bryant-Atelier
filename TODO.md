@@ -69,6 +69,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **How we work:** heading is now "how we work." (matching the menu) with the note "On Monthly Content, steps 2 to 4 repeat every month." (DRAFT). **[ADD]** a rough brand film timeline to show on the steps and in the FAQ.
 
+- [ ] **Homepage review, round 1** (DRAFT copy): hero label "Film & content studio · Byron Bay"; Services heading "what we make." with "Everything video, under one roof." leading the intro; outcome tags "Tell your story / Show up every week / Reach the right people"; a still on each service card (Flowing Wood campfire, ad 3 poster, Bytropic surf). The founder band under the hero was removed (your photo stays in the hero and Meet the filmmaker). The logo strip now starts with Huckberry, Ultimate Ears, Rogue Watches and Koud.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
