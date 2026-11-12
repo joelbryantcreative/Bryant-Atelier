@@ -26,10 +26,6 @@
   ],
   "nav": [
     {
-      "label": "Work",
-      "href": "/work/"
-    },
-    {
       "label": "Services",
       "href": "/#services"
     },
@@ -37,6 +33,10 @@
       "label": "Who we help",
       "href": "/#who",
       "wideOnly": true
+    },
+    {
+      "label": "Work",
+      "href": "/work/"
     },
     {
       "label": "How we work",
