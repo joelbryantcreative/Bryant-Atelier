@@ -857,3 +857,30 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 /* Who we help on dark: lighter outlined panel for "Don't see your business?" */
 .on-dark .not-listed { background: rgba(244, 241, 234, 0.06); border: 1px solid var(--rule-on-dark); }
 
+
+/* Closing offer card */
+.offer-card { display: grid; border-radius: 1.5rem; overflow: hidden; background: var(--bone); color: var(--ink); }
+@media (min-width: 60rem) { .offer-card { grid-template-columns: 1.35fr 1fr; } }
+.offer-card__main { display: flex; flex-direction: column; align-items: flex-start; gap: 1.1rem; padding: clamp(1.75rem, 4.5vw, 3.75rem); }
+.offer-card__main h2 { font-size: clamp(2rem, 4.4vw, 3.5rem); }
+.offer-card__lede { font-size: var(--fs-body-lg); color: var(--muted-on-light); max-width: 36em; }
+.offer-card__actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+.offer-card .btn--primary { background: var(--ink); color: var(--bone); }
+.offer-card .btn--primary:hover { background: #000; }
+.offer-card .btn--ghost { border-color: rgba(20,20,20,0.3); color: var(--ink); }
+.offer-card .btn--ghost:hover { background: var(--ink); color: var(--bone); border-color: var(--ink); }
+.offer-card__note { font-size: var(--fs-small); color: var(--muted-on-light); }
+.offer-card__note a { text-decoration: underline; text-underline-offset: 0.2em; }
+.offer-card__side { background: var(--ink-2); color: var(--bone); padding: clamp(1.75rem, 4vw, 3.25rem); display: flex; flex-direction: column; justify-content: center; gap: 1.25rem; }
+.offer-card__side h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); letter-spacing: -0.02em; }
+.offer-card__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.offer-card__list li { position: relative; padding-left: 2rem; color: rgba(244,241,234,0.88); }
+.offer-card__list li::before { content: ""; position: absolute; left: 0; top: 0.15rem; width: 1.25rem; height: 1.25rem; border-radius: 50%; background: var(--bone); }
+.offer-card__list li::after { content: ""; position: absolute; left: 0.38rem; top: 0.48rem; width: 0.5rem; height: 0.27rem; border-left: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); transform: rotate(-45deg); }
+.offer-card__direct { display: flex; align-items: center; gap: 0.75rem; padding-top: 1.25rem; border-top: 1px dashed var(--rule-on-dark); font-size: var(--fs-small); color: var(--muted-on-dark); }
+.offer-card__avatar, .offer-card__avatar img { width: 2.75rem; height: 2.75rem; border-radius: 50%; overflow: hidden; display: block; object-fit: cover; flex: none; }
+/* About on a light background */
+.on-light .why li { background: #fff; border: 1px solid var(--rule-on-light); }
+.on-light .about__pill { background: var(--mist); }
+.footer-areas { font-size: var(--fs-small); color: var(--muted-on-dark); }
+.on-mist .quote--featured, .on-light .quote--featured { background: var(--ink); color: var(--bone); }

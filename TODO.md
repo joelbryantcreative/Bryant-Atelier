@@ -73,6 +73,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Free video plan section removed from the homepage.** All of its content (the 4 parts, "How you get it", and the "Not sure what to film, or what your story is?" line) lives on `/free-video-plan/`. Every homepage button still links there. Sections are renumbered 01 to 09.
 
+- [ ] **Homepage flow, round 2:** order is now Services, Work, Who we help, Client wins, Testimonials, Meet the filmmaker, How we work, FAQ, then a closing offer card ("Let's find the story worth telling." DRAFT, with Get your free video plan / Text / Email us and the 4-point checklist). The homepage contact form is gone; the full form stays on /contact/ ("Send us a brief" link). Service areas moved to the footer. All headings are now sentence case. Menu: Services, Work, Who we help, About, How we work.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?

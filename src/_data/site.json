@@ -39,12 +39,12 @@
       "wideOnly": true
     },
     {
-      "label": "How we work",
-      "href": "/#approach"
-    },
-    {
       "label": "About",
       "href": "/#about"
+    },
+    {
+      "label": "How we work",
+      "href": "/#approach"
     }
   ],
   "ctaLabel": "Get your free video plan",

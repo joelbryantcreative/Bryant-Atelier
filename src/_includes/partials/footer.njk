@@ -34,6 +34,10 @@
         <ul role="list">
           <li>{{ site.location }}</li>
         </ul>
+        <h2 style="margin-top: var(--space-md)">Areas served</h2>
+        <ul role="list" class="footer-areas">
+          {%- for a in site.areas %}<li>{{ a }}</li>{% endfor %}
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">

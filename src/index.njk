@@ -90,7 +90,7 @@ homeReels: [1, 3]
     <div class="section-head section-head--split" style="margin-bottom: 0">
       <div>
         <span class="eyebrow">02 / Work</span>
-        <h2 id="work-h" style="margin-top: 1rem">selected films.</h2>
+        <h2 id="work-h" style="margin-top: 1rem">Selected films.</h2>
       </div>
       <p class="lede muted">A few recent films. Brand work and documentary, often blended.</p>
     </div>
@@ -123,7 +123,7 @@ homeReels: [1, 3]
     <div class="section-head section-head--split">
       <div>
         <span class="eyebrow">03 / Who we help</span>
-        <h2 id="who-h" style="margin-top: 1rem">businesses with a story worth telling. {% draft %}</h2>
+        <h2 id="who-h" style="margin-top: 1rem">Businesses with a story worth telling. {% draft %}</h2>
       </div>
       <p class="lede muted">Mostly local businesses from Byron Bay to the Gold Coast, plus outdoor and lifestyle brands further afield. {% draft %}</p>
     </div>
@@ -138,64 +138,13 @@ homeReels: [1, 3]
   </div>
 </section>
 
-{# 5. HOW WE WORK (Lineage's Develop / Direct / Distribute, with the free step first) #}
-<section class="section on-dark how" id="approach" aria-labelledby="approach-h">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow">04 / How we work</span>
-        <h2 id="approach-h" style="margin-top: 1rem">how we work.</h2>
-      </div>
-      <p class="lede muted">One shoot. A hero film, a month of social content and the ads that carry it, all from the same footage. {% draft %}</p>
-    </div>
-    <ol class="steps" role="list">
-      <li class="step">
-        <span class="step__num">01</span>
-        <h3>Start free</h3>
-        <p class="step__sub">Your free video plan</p>
-        <p class="step__body">We study your business and send you a plan: your story, 3 ideas to shoot, what others in your industry do well, and what to fix. Within 2 business days. {% draft %}</p>
-        <p class="step__get"><span>You get</span>Clear ideas, even if we don't work together {% draft %}</p>
-      </li>
-      <li class="step">
-        <span class="step__num">02</span>
-        <h3>Develop</h3>
-        <p class="step__sub">Plan the story</p>
-        <p class="step__body">Story development, treatment, casting, scheduling and campaign strategy. The decisions made before a camera rolls shape everything that follows.</p>
-        <p class="step__get"><span>You get</span>A treatment, a shot list and a plan {% draft %}</p>
-      </li>
-      <li class="step">
-        <span class="step__num">03</span>
-        <h3>Direct</h3>
-        <p class="step__sub">Shoot and edit</p>
-        <p class="step__body">Direction, cinematography, sound and lighting through to editing, colour and sound design. Embedded with the work, end to end.</p>
-        <p class="step__get"><span>You get</span>A hero film and a library of footage {% draft %}</p>
-      </li>
-      <li class="step step--light">
-        <span class="step__num">04</span>
-        <h3>Distribute</h3>
-        <p class="step__sub">Cut, post and promote</p>
-        <p class="step__body">Cut-downs, formats, content optimisation, community engagement and ongoing repurposing: the long tail that compounds.</p>
-        <p class="step__get"><span>You get</span>Social content and ads that keep working {% draft %}</p>
-      </li>
-    </ol>
-    <p class="steps__note">On Monthly Content, steps 2 to 4 repeat every month. {% draft %}</p>
-    <div class="cta-strip">
-      <p><strong>Step one is free.</strong> Find out what your content could be doing. {% draft %}</p>
-      <div class="cta-strip__actions">
-        <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
-        {% include "partials/text-alt.njk" %}
-      </div>
-    </div>
-  </div>
-</section>
-
 {# 6. CLIENT WINS / RECOGNITION. Every figure comes from the project write-ups. #}
 <section class="section on-light" id="recognition" aria-labelledby="wins-h">
   <div class="container">
     <div class="section-head section-head--split">
       <div>
-        <span class="eyebrow">05 / Client wins</span>
-        <h2 id="wins-h" style="margin-top: 1rem">some recent wins.</h2>
+        <span class="eyebrow">04 / Client wins</span>
+        <h2 id="wins-h" style="margin-top: 1rem">Some recent wins.</h2>
       </div>
       <p class="lede muted">Films that travel, campaigns that keep giving, and stories told the way they happened. {% draft %}</p>
     </div>
@@ -249,18 +198,18 @@ homeReels: [1, 3]
 </section>
 
 {# 7. TESTIMONIALS ----------------------------------------------------- #}
-<section class="section on-light" id="testimonials" aria-labelledby="testimonials-h">
+<section class="section on-mist" id="testimonials" aria-labelledby="testimonials-h">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">06 / Testimonials</span>
-      <h2 id="testimonials-h">in their words.</h2>
+      <span class="eyebrow">05 / Testimonials</span>
+      <h2 id="testimonials-h">In their words.</h2>
     </div>
     {% include "partials/testimonials.njk" %}
   </div>
 </section>
 
 {# 8. ABOUT + WHY WORK WITH ME ------------------------------------------ #}
-<section class="section on-mist" id="about" aria-labelledby="about-h">
+<section class="section on-light" id="about" aria-labelledby="about-h">
   <div class="container about">
     {%- if site.portrait %}
     <figure class="about__photo">
@@ -273,7 +222,7 @@ homeReels: [1, 3]
     </div>
     {%- endif %}
     <div class="about__text">
-      <span class="eyebrow">07 / Meet the filmmaker</span>
+      <span class="eyebrow">06 / Meet the filmmaker</span>
       <h2 id="about-h">Joel Bryant.</h2>
       <p class="about__pill"><strong>{{ site.experience.value }}</strong> {{ site.experience.label }}</p>
       <p>Bryant Atelier is led by Joel Bryant, a filmmaker and founder based in Byron Bay. {% draft %}</p>
@@ -300,25 +249,72 @@ homeReels: [1, 3]
   </div>
 </section>
 
+{# 5. HOW WE WORK (Lineage's Develop / Direct / Distribute, with the free step first) #}
+<section class="section on-dark how" id="approach" aria-labelledby="approach-h">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">07 / How we work</span>
+        <h2 id="approach-h" style="margin-top: 1rem">How we work.</h2>
+      </div>
+      <p class="lede muted">One shoot. A hero film, a month of social content and the ads that carry it, all from the same footage. {% draft %}</p>
+    </div>
+    <ol class="steps" role="list">
+      <li class="step">
+        <span class="step__num">01</span>
+        <h3>Start free</h3>
+        <p class="step__sub">Your free video plan</p>
+        <p class="step__body">We study your business and send you a plan: your story, 3 ideas to shoot, what others in your industry do well, and what to fix. Within 2 business days. {% draft %}</p>
+        <p class="step__get"><span>You get</span>Clear ideas, even if we don't work together {% draft %}</p>
+      </li>
+      <li class="step">
+        <span class="step__num">02</span>
+        <h3>Develop</h3>
+        <p class="step__sub">Plan the story</p>
+        <p class="step__body">Story development, treatment, casting, scheduling and campaign strategy. The decisions made before a camera rolls shape everything that follows.</p>
+        <p class="step__get"><span>You get</span>A treatment, a shot list and a plan {% draft %}</p>
+      </li>
+      <li class="step">
+        <span class="step__num">03</span>
+        <h3>Direct</h3>
+        <p class="step__sub">Shoot and edit</p>
+        <p class="step__body">Direction, cinematography, sound and lighting through to editing, colour and sound design. Embedded with the work, end to end.</p>
+        <p class="step__get"><span>You get</span>A hero film and a library of footage {% draft %}</p>
+      </li>
+      <li class="step step--light">
+        <span class="step__num">04</span>
+        <h3>Distribute</h3>
+        <p class="step__sub">Cut, post and promote</p>
+        <p class="step__body">Cut-downs, formats, content optimisation, community engagement and ongoing repurposing: the long tail that compounds.</p>
+        <p class="step__get"><span>You get</span>Social content and ads that keep working {% draft %}</p>
+      </li>
+    </ol>
+    <p class="steps__note">On Monthly Content, steps 2 to 4 repeat every month. {% draft %}</p>
+    <div class="cta-strip">
+      <p><strong>Step one is free.</strong> Find out what your content could be doing. {% draft %}</p>
+      <div class="cta-strip__actions">
+        <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+        {% include "partials/text-alt.njk" %}
+      </div>
+    </div>
+  </div>
+</section>
+
 {# 9. FAQ --------------------------------------------------------------- #}
 <section class="section on-light" id="faq" aria-labelledby="faq-h">
   <div class="container faq-wrap">
     <div class="section-head">
       <span class="eyebrow">08 / Common questions</span>
-      <h2 id="faq-h">good to know. {% draft %}</h2>
+      <h2 id="faq-h">Good to know before you get in touch. {% draft %}</h2>
       <p class="muted">Anything else? <a href="{{ site.smsHref }}">Text Joel on {{ site.phoneLocal }}</a>.</p>
     </div>
     {% include "partials/faq.njk" %}
   </div>
 </section>
 
-{# 9. CONTACT ---------------------------------------------------------- #}
+{# 9. CLOSING OFFER (the full contact form lives on /contact/) ------- #}
 <section class="section on-deep" id="contact" aria-labelledby="contact-h">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">09 / Contact</span>
-      <h2 id="contact-h">every great project starts here.</h2>
-    </div>
-    {% include "partials/contact-section.njk" %}
+    {% include "partials/offer-card.njk" %}
   </div>
 </section>

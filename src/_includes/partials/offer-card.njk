@@ -1,0 +1,27 @@
+{#- Closing offer, Biggs Growth style: one card, one next step, three ways to take it. -#}
+<div class="offer-card">
+  <div class="offer-card__main">
+    <span class="pill">Free video plan</span>
+    <h2 id="contact-h">Let's find the story worth telling. {% draft %}</h2>
+    <p class="offer-card__lede">Tell us about your business and we'll send you a plan made for it: your story, 3 ideas to shoot this month, what others in your industry do well, and what's holding your video back. Back to you within 2 business days. {% draft %}</p>
+    <div class="offer-card__actions">
+      <a class="btn btn--primary" href="{{ site.ctaUrl }}">{{ site.ctaLabel }} <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn--ghost" href="{{ site.smsHref }}">Text {{ site.phoneLocal }}</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}">Email us</a>
+    </div>
+    <p class="offer-card__note">Pick whichever is easiest: a short form, a text or an email. Already know what you need? <a href="/contact/">Send us a brief</a>. {% draft %}</p>
+  </div>
+  <div class="offer-card__side">
+    <h3>What's in your free video plan</h3>
+    <ul class="offer-card__list" role="list">
+      <li>Your story in one line, and how we'd film it</li>
+      <li>3 short-form ideas for this month, with hooks</li>
+      <li>What others in your industry do well</li>
+      <li>What's holding your video back</li>
+    </ul>
+    <p class="offer-card__direct">
+      {%- if site.portrait %}<span class="offer-card__avatar">{% picture "people/" + site.portrait, "", "48px", [96] %}</span>{% endif %}
+      You'll speak with Joel directly, not a sales team.
+    </p>
+  </div>
+</div>
