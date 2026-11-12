@@ -64,6 +64,9 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [x] **Portrait added** (`src/_img/people/joel.jpg`): in the band under the hero, as a small avatar beside "Or text Joel" in the hero, and in Meet the filmmaker. **[ADD]** 2 or 3 more photos (on set, in the field, editing) to turn the About photo into a collage like Jake's.
 
+- [ ] **Experience:** "Nearly 10 years making films and content" now shows as a chip in the hero and a pill in Meet the filmmaker (`site.json` → `experience`). Change the wording there if "films and content" isn't quite right.
+- [ ] **Google reviews:** the hero has a ready-made rating chip that stays hidden until you fill in `site.json` → `google.rating` (and optionally `reviewCount`). Only switch it on once the reviews are live on Google.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?

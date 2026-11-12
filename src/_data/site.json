@@ -52,5 +52,14 @@
   "planSubject": "Free video plan request from bryantatelier.com.au",
   "phoneLocal": "0497 962 046",
   "smsHref": "sms:+61497962046",
-  "portrait": "joel.jpg"
+  "portrait": "joel.jpg",
+  "experience": {
+    "value": "Nearly 10 years",
+    "label": "making films and content"
+  },
+  "google": {
+    "rating": null,
+    "reviewCount": null,
+    "reviewsUrl": null
+  }
 }
