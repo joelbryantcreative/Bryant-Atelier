@@ -30,13 +30,13 @@
       "href": "/#services"
     },
     {
+      "label": "Work",
+      "href": "/work/"
+    },
+    {
       "label": "Who we help",
       "href": "/#who",
       "wideOnly": true
-    },
-    {
-      "label": "Work",
-      "href": "/work/"
     },
     {
       "label": "How we work",

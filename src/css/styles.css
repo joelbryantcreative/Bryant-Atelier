@@ -857,6 +857,3 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 /* Who we help on dark: lighter outlined panel for "Don't see your business?" */
 .on-dark .not-listed { background: rgba(244, 241, 234, 0.06); border: 1px solid var(--rule-on-dark); }
 
-/* Who we help (dark) runs into Work (dark): a hairline marks the new chapter */
-#who + #work .work-head { border-top: 1px solid var(--rule-on-dark); }
-#who { padding-bottom: var(--space-xl); }
