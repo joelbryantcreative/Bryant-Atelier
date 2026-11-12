@@ -38,7 +38,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 - [ ] **Ads & Growth line:** "I run the ads myself… I work alongside growth partner Biggs Growth" with a link to biggsgrowth.com.au. Confirm Jake is happy to be named and linked.
 - [ ] **"Who I work with" cards** (`src/_data/industries.json`): approve the six categories and their example lists. **[ADD]** a real estate or property still for the sixth card; until then it shows a placeholder.
 - [ ] **Buttons:** every offer button now says "Get your free video plan" (header, hero, mobile menu, How I work, Client wins, Meet the filmmaker). "Book a call" stays on the contact page, in the mobile menu and next to the form. Old `/review/` links redirect to `/free-video-plan/`.
-- [ ] **Hero proof line:** "Best Byron Bay Film, Byron Bay International Film Festival 2025" now sits under the hero buttons.
+- [ ] **Hero proof:** the small award line was removed from the hero (the award card right below shows it). Once you have your Google rating and years of experience, add proof chips to the hero like Jake's.
 - [ ] **Form submissions:** plan requests go to the same Formsubmit inbox with the subject "Free video plan request from bryantatelier.com.au". The form includes an optional budget band (Under $2,000 to $10,000+) so you can spot brand film leads. **Price anchor:** only add "Usually $X" if you charge that for creative development.
 
 ## Homepage sections modelled on Biggs Growth
