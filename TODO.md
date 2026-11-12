@@ -53,7 +53,7 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **FAQ** (`src/_data/faq.json`, homepage `#faq`): approve the 3 drafted answers (what's in the plan, do you travel, who will I work with). **[ADD]** answers for: how much it costs (your starting prices), do I need to be on camera, how long a brand film takes, who owns the footage. Only answered questions are sent to Google as FAQ data; placeholders are left out automatically.
 - [ ] **"Or text Joel on 0497 962 046"** now sits under the main buttons (hero, free plan, How I work, Client wins, Meet the filmmaker, "Don't see your business?", plan page). On phones it opens a text message. Check you're happy to be texted on that number.
-- [ ] **Header** shows your phone number (like Jake's) instead of "Get in touch". The mobile menu has Call and Text links.
+- [ ] **Header** shows "Get in touch" (to the contact page) next to the free video plan button. Your number is under the hero buttons ("Or text Joel"), in the contact section, the footer and the phone menu.
 - [ ] **Contact section:** "Pick whichever is easiest" (Text, Call, Email), "You'll speak with me directly, not a sales team", and a checklist of what's in the free plan. DRAFT.
 - [ ] **Free Video Plan:** now **4 parts** (added "What others in your industry do well") and **"within 2 business days"** instead of 48 hours, on every page, the form and the template.
 - [ ] **Still needed from you:** starting prices, years of experience, Google rating (if you have reviews), photos and a few lines on why you started, ABN.
