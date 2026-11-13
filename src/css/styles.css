@@ -889,3 +889,4 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 @media (max-width: 47.99rem) { .hero__lead { display: block; } }
 .nowrap { white-space: nowrap; }
 .hero__base { display: block; margin-top: 0.9rem; }
+.hero__pin { display: inline-block; width: 0.95em; height: 0.95em; margin-right: 0.35em; vertical-align: -0.12em; }
