@@ -492,7 +492,7 @@ body.nav-open .mobile-nav { opacity: 1; visibility: visible; transform: none; tr
 .hero h1 { font-size: clamp(2rem, 5vw, 4.5rem); letter-spacing: -0.04em; line-height: 1.02; max-width: 22ch; }
 .hero__label .serif { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
 .hero h1 .serif { display: block; letter-spacing: -0.035em; }
-.hero__sub { margin-top: var(--space-md); font-size: var(--fs-body-lg); max-width: 36em; color: rgba(244, 241, 234, 0.86); }
+.hero__sub { margin-top: var(--space-md); font-size: var(--fs-body-lg); max-width: 44em; color: rgba(244, 241, 234, 0.86); }
 .hero__actions { margin-top: var(--space-lg); display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
 /* Services */
@@ -885,8 +885,8 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 .on-light .about__pill { background: var(--mist); }
 .footer-areas { font-size: var(--fs-small); color: var(--muted-on-dark); }
 .on-mist .quote--featured, .on-light .quote--featured { background: var(--ink); color: var(--bone); }
-/* Phones: "Your one-stop creative workshop." sits on its own line */
-@media (max-width: 47.99rem) { .hero__lead { display: block; } }
+/* "Your one-stop creative workshop." sits on its own line on every screen */
+.hero__lead { display: block; }
 .nowrap { white-space: nowrap; }
 .hero__base { display: block; margin-top: 0.9rem; }
 .hero__pin { display: inline-block; width: 0.95em; height: 0.95em; margin-right: 0.35em; vertical-align: -0.12em; }
