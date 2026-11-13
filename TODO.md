@@ -79,6 +79,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Who we help (DRAFT):** heading "Businesses ready to grow."; line "From local businesses and growing brands to founders, artists and not-for-profits."; box "Don't see your business? Whether you're a founder, an artist or an individual with a project in mind, let's talk." (Caravana Sun Mgmt, from the Google reviews, is the band's management.)
 
+- [x] **Approved (DRAFT tags removed):** hero headline and caption, "Everything video, under one roof.", "Businesses ready to grow." with its line and the "Don't see your business?" text. Everything still tagged on the site is waiting for your review.
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
