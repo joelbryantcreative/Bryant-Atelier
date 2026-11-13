@@ -888,3 +888,4 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 /* Phones: "Your one-stop creative workshop." sits on its own line */
 @media (max-width: 47.99rem) { .hero__lead { display: block; } }
 .nowrap { white-space: nowrap; }
+.hero__base { display: block; margin-top: 0.9rem; }
