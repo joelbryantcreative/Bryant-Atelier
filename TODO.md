@@ -77,6 +77,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [ ] **Hero headline (clarity version, DRAFT):** big headline "Brand films, documentaries and content for businesses that want to be seen." (location moved to the line "Based in Byron Bay, available worldwide." under the sentence); the slogan "Stories worth telling. Content that works." is now the small label above it; the sentence below is "Your one-stop creative workshop. From the story, to the shoot, to the ads... we make content that brings in customers." Shorter headline options if you want them: "Brand films and content for businesses, Byron Bay and beyond." / "Brand films and content, Byron Bay and beyond."
 
+- [ ] **Who we help (DRAFT):** heading "Businesses ready to grow."; line "From local businesses and growing brands to founders, artists and not-for-profits."; box "Don't see your business? Whether you're a founder, an artist or an individual with a project in mind, let's talk." (Caravana Sun Mgmt, from the Google reviews, is the band's management.)
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
