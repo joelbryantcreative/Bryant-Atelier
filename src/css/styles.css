@@ -885,3 +885,6 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 .on-light .about__pill { background: var(--mist); }
 .footer-areas { font-size: var(--fs-small); color: var(--muted-on-dark); }
 .on-mist .quote--featured, .on-light .quote--featured { background: var(--ink); color: var(--bone); }
+/* Phones: "Your one-stop creative workshop." sits on its own line */
+@media (max-width: 47.99rem) { .hero__lead { display: block; } }
+.nowrap { white-space: nowrap; }
