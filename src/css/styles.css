@@ -907,3 +907,11 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 .work-card__meta { align-items: baseline; }
 .work-card:has(.badge) .work-card__mark { padding-top: 20%; }
 @media (max-width: 47.99rem) { .hero__label-sep { display: none; } .hero__label { flex-direction: column; align-items: flex-start; gap: 0.35rem; } }
+
+/* Proof lines in the hero use the same title-card style as the slogan (no pills) */
+.hero__chips { flex-direction: column; gap: 0.6rem; }
+.hero__chips li { background: none !important; border: 0 !important; padding: 0 !important; border-radius: 0; -webkit-backdrop-filter: none; backdrop-filter: none;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; color: rgba(244, 241, 234, 0.85); }
+.hero__chips .serif { font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 1.0625rem; }
+.hero__chips .chip-stars { letter-spacing: 0.1em; }
+.hero__text { margin-top: var(--space-md); }

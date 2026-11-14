@@ -23,9 +23,9 @@ homeReels: [1, 3]
     </div>
     <ul class="hero__chips" role="list">
       {%- if site.google.rating %}
-      <li><span class="chip-stars" aria-hidden="true">★★★★★</span><strong>{{ site.google.rating }}</strong>&nbsp;on Google{% if site.google.reviewCount %} ({{ site.google.reviewCount }} reviews){% endif %}</li>
+      <li><span class="hero__label-caps"><span class="chip-stars" aria-hidden="true">★★★★★</span> {{ site.google.rating }} on Google</span><span class="hero__label-sep" aria-hidden="true"></span><span class="serif">{% if site.google.reviewCount %}{{ site.google.reviewCount }} reviews{% else %}from our clients{% endif %}</span></li>
       {%- endif %}
-      <li><strong>{{ site.experience.value }}</strong>&nbsp;{{ site.experience.label }}</li>
+      <li><span class="hero__label-caps">{{ site.experience.value }}</span><span class="hero__label-sep" aria-hidden="true"></span><span class="serif">{{ site.experience.label }}</span></li>
     </ul>
     <p class="hero__text">{%- if site.portrait %}<span class="hero__avatar">{% picture "people/" + site.portrait, "", "40px", [80] %}</span>{% endif %}{% include "partials/text-alt.njk" %}</p>
   </div>
