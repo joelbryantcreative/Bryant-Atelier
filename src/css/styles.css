@@ -890,3 +890,17 @@ a.win:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,
 .nowrap { white-space: nowrap; }
 .hero__base { display: block; margin-top: 0.9rem; }
 .hero__pin { display: inline-block; width: 0.95em; height: 0.95em; margin-right: 0.35em; vertical-align: -0.12em; }
+
+/* Homepage featured work: one large film + two smaller (Fortem-style) */
+.work-feature { display: grid; gap: 1rem; }
+.work-feature .work-card { border-radius: 1rem; aspect-ratio: 16 / 10; }
+@media (min-width: 56rem) {
+  .work-feature { grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 1.25rem; }
+  .work-feature .work-card:first-child { grid-row: 1 / span 2; aspect-ratio: auto; min-height: 100%; }
+  .work-feature .work-card:first-child .work-card__title { font-size: clamp(1.5rem, 2.4vw, 2.1rem); }
+  .work-feature .work-card:first-child .work-card__mark img { max-height: clamp(3.5rem, 7vw, 6.5rem); }
+}
+#work .section-cta { margin-top: var(--space-md); }
+/* Simpler tile meta: title + one label on a single row */
+.work-card__meta { align-items: baseline; }
+.work-card:has(.badge) .work-card__mark { padding-top: 20%; }

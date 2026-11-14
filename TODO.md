@@ -81,6 +81,8 @@ Everything that needs your eyes before launch. On the site, items show as a yell
 
 - [x] **Approved (DRAFT tags removed):** hero headline and caption, "Everything video, under one roof.", "Businesses ready to grow." with its line and the "Don't see your business?" text. Everything still tagged on the site is waiting for your review.
 
+- [ ] **Fortem-inspired polish:** homepage Work shows one large featured film (Flowing Wood) plus Convivio and Bytropic, then "See all work"; work tiles now show title + one label (client line removed); the free video plan button now appears only in the hero, after Work, in Client wins and in the closing card (removed from Services, About and How we work; "Don't see your business?" links to the contact page).
+
 ## [CHECK] Facts and permissions
 
 - [ ] **Edited testimonials.** In Ben Handler's and Craved This's quotes, "Convert Studios" now reads **[Bryant Atelier]**. The square brackets mark it as an edit. OK with you, and with them?
